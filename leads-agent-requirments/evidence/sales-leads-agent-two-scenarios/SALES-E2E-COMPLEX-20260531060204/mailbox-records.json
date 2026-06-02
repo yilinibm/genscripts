@@ -1,0 +1,161 @@
+{
+  "sales": {
+    "account": "gs_sales_01@163.com",
+    "records": [
+      {
+        "folder": "INBOX",
+        "uid": "1780044771",
+        "messageId": "<178020734326.67985.5802677928728210702.SALES-E2E-COMPLEX-20260531060204.customer-a-inquiry@leads-e2e.local>",
+        "from": "Alex Chen <gs_customer_01@163.com>",
+        "to": "Hui Li <gs_sales_01@163.com>",
+        "cc": "",
+        "date": "2026-05-31T06:02:23Z",
+        "subject": "[SALES-E2E-COMPLEX-20260531060204] 一抗产品咨询：WB 和 IHC 验证",
+        "body": "[SALES-E2E-COMPLEX-20260531060204]\nStep: CUSTOMER-A-INQUIRY\n\nHui 你好，\n\n我们实验室正在评估科研用一抗产品，主要用于人源样本 Western blot，后续也希望做 IHC 验证。请推荐合适的一抗产品，并提供 datasheet、验证数据、现货情况、交期和报价。\n\n谢谢，\nAlex Chen",
+        "bodyLength": 179
+      },
+      {
+        "folder": "INBOX",
+        "uid": "1780044772",
+        "messageId": "<178020734805.67985.12329721343477162594.SALES-E2E-COMPLEX-20260531060204.customer-b-inquiry@leads-e2e.local>",
+        "from": "Morgan Lee <gs_customer_02@163.com>",
+        "to": "Hui Li <gs_sales_01@163.com>",
+        "cc": "",
+        "date": "2026-05-31T06:02:28Z",
+        "subject": "[SALES-E2E-COMPLEX-20260531060204] 一抗产品咨询：IF 染色筛选",
+        "body": "[SALES-E2E-COMPLEX-20260531060204]\nStep: CUSTOMER-B-INQUIRY\n\nHui 你好，\n\n我们正在为细胞免疫荧光实验筛选科研用一抗产品，样本是培养的人源细胞。请推荐适合 IF 应用的一抗产品，并提供 datasheet、验证图片、推荐稀释比例、现货情况、交期和报价。\n\n谢谢，\nMorgan Lee",
+        "bodyLength": 174
+      },
+      {
+        "folder": "已发送",
+        "uid": "1780107711",
+        "messageId": "<178020740857.67985.1426169870740266615.SALES-E2E-COMPLEX-20260531060204.sales-reply-a@leads-e2e.local>",
+        "from": "Hui Li <gs_sales_01@163.com>",
+        "to": "Alex Chen <gs_customer_01@163.com>",
+        "cc": "",
+        "date": "2026-05-31T06:03:28Z",
+        "subject": "[SALES-E2E-COMPLEX-20260531060204] Re: 一抗产品咨询：WB 和 IHC 验证",
+        "body": "[SALES-E2E-COMPLEX-20260531060204]\nStep: SALES-REPLY-A\n\nAlex 你好，\n\n感谢咨询。请补充目标蛋白名称、样本物种和样本类型，我们会整理 2 个 WB/IHC 一抗候选产品、datasheet、库存、交期和报价。\n\n谢谢，\nHui Li",
+        "bodyLength": 146
+      },
+      {
+        "folder": "已发送",
+        "uid": "1780107712",
+        "messageId": "<178020741350.67985.8768390984671638874.SALES-E2E-COMPLEX-20260531060204.sales-reply-b@leads-e2e.local>",
+        "from": "Hui Li <gs_sales_01@163.com>",
+        "to": "Morgan Lee <gs_customer_02@163.com>",
+        "cc": "",
+        "date": "2026-05-31T06:03:33Z",
+        "subject": "[SALES-E2E-COMPLEX-20260531060204] Re: 一抗产品咨询：IF 染色筛选",
+        "body": "[SALES-E2E-COMPLEX-20260531060204]\nStep: SALES-REPLY-B\n\nMorgan 你好，\n\n感谢咨询。针对 IF 染色筛选，请补充目标 marker 和细胞类型，我们会整理 3 个 IF 一抗候选产品、验证图片、库存、交期和报价。\n\n谢谢，\nHui Li",
+        "bodyLength": 149
+      },
+      {
+        "folder": "INBOX",
+        "uid": "1780044773",
+        "messageId": "<178020745407.67985.424166695196856758.SALES-E2E-COMPLEX-20260531060204.customer-a-followup@leads-e2e.local>",
+        "from": "Alex Chen <gs_customer_01@163.com>",
+        "to": "Hui Li <gs_sales_01@163.com>",
+        "cc": "",
+        "date": "2026-05-31T06:04:14Z",
+        "subject": "[SALES-E2E-COMPLEX-20260531060204] Re: 一抗产品咨询：WB 和 IHC 验证",
+        "body": "[SALES-E2E-COMPLEX-20260531060204]\nStep: CUSTOMER-A-FOLLOWUP\n\nHui 你好，\n\n补充：目标是人源肿瘤相关 marker，样本是细胞裂解液。请优先推荐 2 个科研用一抗候选产品，并附 datasheet、推荐稀释比例、验证依据、库存、交期和报价。\n\n谢谢，\nAlex",
+        "bodyLength": 163
+      },
+      {
+        "folder": "INBOX",
+        "uid": "1780044774",
+        "messageId": "<178020745941.67985.10601322670607138162.SALES-E2E-COMPLEX-20260531060204.customer-b-followup@leads-e2e.local>",
+        "from": "Morgan Lee <gs_customer_02@163.com>",
+        "to": "Hui Li <gs_sales_01@163.com>",
+        "cc": "",
+        "date": "2026-05-31T06:04:19Z",
+        "subject": "[SALES-E2E-COMPLEX-20260531060204] Re: 一抗产品咨询：IF 染色筛选",
+        "body": "[SALES-E2E-COMPLEX-20260531060204]\nStep: CUSTOMER-B-FOLLOWUP\n\nHui 你好，\n\n补充：样本是固定后的人源培养细胞，应用只做 IF。请提供 3 个科研用一抗候选产品的 datasheet、IF 验证图片、推荐稀释比例、库存状态、交期和报价。\n\n谢谢，\nMorgan",
+        "bodyLength": 162
+      }
+    ]
+  },
+  "customerA": {
+    "account": "gs_customer_01@163.com",
+    "records": [
+      {
+        "folder": "已发送",
+        "uid": "1780045525",
+        "messageId": "<178020734326.67985.5802677928728210702.SALES-E2E-COMPLEX-20260531060204.customer-a-inquiry@leads-e2e.local>",
+        "from": "Alex Chen <gs_customer_01@163.com>",
+        "to": "Hui Li <gs_sales_01@163.com>",
+        "cc": "",
+        "date": "2026-05-31T06:02:23Z",
+        "subject": "[SALES-E2E-COMPLEX-20260531060204] 一抗产品咨询：WB 和 IHC 验证",
+        "body": "[SALES-E2E-COMPLEX-20260531060204]\nStep: CUSTOMER-A-INQUIRY\n\nHui 你好，\n\n我们实验室正在评估科研用一抗产品，主要用于人源样本 Western blot，后续也希望做 IHC 验证。请推荐合适的一抗产品，并提供 datasheet、验证数据、现货情况、交期和报价。\n\n谢谢，\nAlex Chen",
+        "bodyLength": 179
+      },
+      {
+        "folder": "INBOX",
+        "uid": "1780044841",
+        "messageId": "<178020740857.67985.1426169870740266615.SALES-E2E-COMPLEX-20260531060204.sales-reply-a@leads-e2e.local>",
+        "from": "Hui Li <gs_sales_01@163.com>",
+        "to": "Alex Chen <gs_customer_01@163.com>",
+        "cc": "",
+        "date": "2026-05-31T06:03:28Z",
+        "subject": "[SALES-E2E-COMPLEX-20260531060204] Re: 一抗产品咨询：WB 和 IHC 验证",
+        "body": "[SALES-E2E-COMPLEX-20260531060204]\nStep: SALES-REPLY-A\n\nAlex 你好，\n\n感谢咨询。请补充目标蛋白名称、样本物种和样本类型，我们会整理 2 个 WB/IHC 一抗候选产品、datasheet、库存、交期和报价。\n\n谢谢，\nHui Li",
+        "bodyLength": 146
+      },
+      {
+        "folder": "已发送",
+        "uid": "1780045526",
+        "messageId": "<178020745407.67985.424166695196856758.SALES-E2E-COMPLEX-20260531060204.customer-a-followup@leads-e2e.local>",
+        "from": "Alex Chen <gs_customer_01@163.com>",
+        "to": "Hui Li <gs_sales_01@163.com>",
+        "cc": "",
+        "date": "2026-05-31T06:04:14Z",
+        "subject": "[SALES-E2E-COMPLEX-20260531060204] Re: 一抗产品咨询：WB 和 IHC 验证",
+        "body": "[SALES-E2E-COMPLEX-20260531060204]\nStep: CUSTOMER-A-FOLLOWUP\n\nHui 你好，\n\n补充：目标是人源肿瘤相关 marker，样本是细胞裂解液。请优先推荐 2 个科研用一抗候选产品，并附 datasheet、推荐稀释比例、验证依据、库存、交期和报价。\n\n谢谢，\nAlex",
+        "bodyLength": 163
+      }
+    ]
+  },
+  "customerB": {
+    "account": "gs_customer_02@163.com",
+    "records": [
+      {
+        "folder": "已发送",
+        "uid": "1780156822",
+        "messageId": "<178020734805.67985.12329721343477162594.SALES-E2E-COMPLEX-20260531060204.customer-b-inquiry@leads-e2e.local>",
+        "from": "Morgan Lee <gs_customer_02@163.com>",
+        "to": "Hui Li <gs_sales_01@163.com>",
+        "cc": "",
+        "date": "2026-05-31T06:02:28Z",
+        "subject": "[SALES-E2E-COMPLEX-20260531060204] 一抗产品咨询：IF 染色筛选",
+        "body": "[SALES-E2E-COMPLEX-20260531060204]\nStep: CUSTOMER-B-INQUIRY\n\nHui 你好，\n\n我们正在为细胞免疫荧光实验筛选科研用一抗产品，样本是培养的人源细胞。请推荐适合 IF 应用的一抗产品，并提供 datasheet、验证图片、推荐稀释比例、现货情况、交期和报价。\n\n谢谢，\nMorgan Lee",
+        "bodyLength": 174
+      },
+      {
+        "folder": "INBOX",
+        "uid": "1780155306",
+        "messageId": "<178020741350.67985.8768390984671638874.SALES-E2E-COMPLEX-20260531060204.sales-reply-b@leads-e2e.local>",
+        "from": "Hui Li <gs_sales_01@163.com>",
+        "to": "Morgan Lee <gs_customer_02@163.com>",
+        "cc": "",
+        "date": "2026-05-31T06:03:33Z",
+        "subject": "[SALES-E2E-COMPLEX-20260531060204] Re: 一抗产品咨询：IF 染色筛选",
+        "body": "[SALES-E2E-COMPLEX-20260531060204]\nStep: SALES-REPLY-B\n\nMorgan 你好，\n\n感谢咨询。针对 IF 染色筛选，请补充目标 marker 和细胞类型，我们会整理 3 个 IF 一抗候选产品、验证图片、库存、交期和报价。\n\n谢谢，\nHui Li",
+        "bodyLength": 149
+      },
+      {
+        "folder": "已发送",
+        "uid": "1780156823",
+        "messageId": "<178020745941.67985.10601322670607138162.SALES-E2E-COMPLEX-20260531060204.customer-b-followup@leads-e2e.local>",
+        "from": "Morgan Lee <gs_customer_02@163.com>",
+        "to": "Hui Li <gs_sales_01@163.com>",
+        "cc": "",
+        "date": "2026-05-31T06:04:19Z",
+        "subject": "[SALES-E2E-COMPLEX-20260531060204] Re: 一抗产品咨询：IF 染色筛选",
+        "body": "[SALES-E2E-COMPLEX-20260531060204]\nStep: CUSTOMER-B-FOLLOWUP\n\nHui 你好，\n\n补充：样本是固定后的人源培养细胞，应用只做 IF。请提供 3 个科研用一抗候选产品的 datasheet、IF 验证图片、推荐稀释比例、库存状态、交期和报价。\n\n谢谢，\nMorgan",
+        "bodyLength": 162
+      }
+    ]
+  }
+}

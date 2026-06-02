@@ -1,0 +1,50 @@
+{
+  "status": "PASS",
+  "results": [
+    {
+      "status": "PASS",
+      "scenario": "Simple one-customer multi-turn scenario",
+      "runId": "SALES-E2E-SIMPLE-20260531060002",
+      "runDir": "./SALES-E2E-SIMPLE-20260531060002",
+      "summary": {
+        "counts": {
+          "leads": 1,
+          "emails": 3,
+          "tasks": 2,
+          "activities": 1
+        },
+        "leadKeys": [
+          [
+            "gs_customer_01@163.com",
+            "CPBU_ANTIBODIES_RUO_ANTIBODIES_PRIMARY_ANTIBODIES"
+          ]
+        ]
+      }
+    },
+    {
+      "status": "PASS",
+      "scenario": "Complex two-customer multi-turn scenario",
+      "runId": "SALES-E2E-COMPLEX-20260531060204",
+      "runDir": "./SALES-E2E-COMPLEX-20260531060204",
+      "summary": {
+        "counts": {
+          "leads": 2,
+          "emails": 6,
+          "tasks": 4,
+          "activities": 2
+        },
+        "leadKeys": [
+          [
+            "gs_customer_01@163.com",
+            "CPBU_ANTIBODIES_RUO_ANTIBODIES_PRIMARY_ANTIBODIES"
+          ],
+          [
+            "gs_customer_02@163.com",
+            "CPBU_ANTIBODIES_RUO_ANTIBODIES_PRIMARY_ANTIBODIES"
+          ]
+        ]
+      }
+    }
+  ],
+  "completedAt": "2026-05-31T06:05:19.780411Z"
+}

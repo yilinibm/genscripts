@@ -1,0 +1,2013 @@
+{
+  "status": "PASS",
+  "scenario": "Complex two-customer multi-turn scenario",
+  "runId": "SALES-E2E-COMPLEX-20260531060204",
+  "sessionId": "759b5db3-23f0-4b90-b270-8b7ad37bb459",
+  "cleanup": {
+    "backend": "cleanup+product initialize",
+    "mailboxes": {
+      "gs_sales_01@163.com": {
+        "deletedCount": 3,
+        "deletedSample": [
+          {
+            "folder": "INBOX",
+            "uid": "1780044769",
+            "messageId": "<178020722189.67985.910683473170934424.SALES-E2E-SIMPLE-20260531060002.customer-a-inquiry@leads-e2e.local>"
+          },
+          {
+            "folder": "INBOX",
+            "uid": "1780044770",
+            "messageId": "<178020728670.67985.11873386422533946234.SALES-E2E-SIMPLE-20260531060002.customer-a-followup@leads-e2e.local>"
+          },
+          {
+            "folder": "已发送",
+            "uid": "1780107710",
+            "messageId": "<178020726214.67985.6703318543589357489.SALES-E2E-SIMPLE-20260531060002.sales-reply-a@leads-e2e.local>"
+          }
+        ]
+      },
+      "gs_customer_01@163.com": {
+        "deletedCount": 3,
+        "deletedSample": [
+          {
+            "folder": "INBOX",
+            "uid": "1780044840",
+            "messageId": "<178020726214.67985.6703318543589357489.SALES-E2E-SIMPLE-20260531060002.sales-reply-a@leads-e2e.local>"
+          },
+          {
+            "folder": "已发送",
+            "uid": "1780045523",
+            "messageId": "<178020722189.67985.910683473170934424.SALES-E2E-SIMPLE-20260531060002.customer-a-inquiry@leads-e2e.local>"
+          },
+          {
+            "folder": "已发送",
+            "uid": "1780045524",
+            "messageId": "<178020728670.67985.11873386422533946234.SALES-E2E-SIMPLE-20260531060002.customer-a-followup@leads-e2e.local>"
+          }
+        ]
+      },
+      "gs_customer_02@163.com": {
+        "deletedCount": 0,
+        "deletedSample": []
+      }
+    }
+  },
+  "deliveries": [
+    {
+      "event": {
+        "step": "CUSTOMER-A-INQUIRY",
+        "sender": "gs_customer_01@163.com",
+        "recipient": "gs_sales_01@163.com",
+        "customerName": "Alex Chen",
+        "subject": "一抗产品咨询：WB 和 IHC 验证",
+        "body": "Hui 你好，\n\n我们实验室正在评估科研用一抗产品，主要用于人源样本 Western blot，后续也希望做 IHC 验证。请推荐合适的一抗产品，并提供 datasheet、验证数据、现货情况、交期和报价。\n\n谢谢，\nAlex Chen"
+      },
+      "sent": {
+        "step": "CUSTOMER-A-INQUIRY",
+        "messageId": "<178020734326.67985.5802677928728210702.SALES-E2E-COMPLEX-20260531060204.customer-a-inquiry@leads-e2e.local>",
+        "subject": "[SALES-E2E-COMPLEX-20260531060204] 一抗产品咨询：WB 和 IHC 验证",
+        "from": "gs_customer_01@163.com",
+        "to": "gs_sales_01@163.com",
+        "smtpSent": true,
+        "sentAppendStatus": {
+          "status": "skipped",
+          "folder": null,
+          "reason": "SMTP-saved copy already visible"
+        },
+        "recipientInboxAppendStatus": {
+          "status": "skipped",
+          "folder": "INBOX",
+          "reason": "SMTP-delivered copy already visible"
+        }
+      },
+      "received": {
+        "folder": "INBOX",
+        "uid": "1780044771",
+        "messageId": "<178020734326.67985.5802677928728210702.SALES-E2E-COMPLEX-20260531060204.customer-a-inquiry@leads-e2e.local>",
+        "from": "Alex Chen <gs_customer_01@163.com>",
+        "to": "Hui Li <gs_sales_01@163.com>",
+        "cc": "",
+        "date": "2026-05-31T06:02:23Z",
+        "subject": "[SALES-E2E-COMPLEX-20260531060204] 一抗产品咨询：WB 和 IHC 验证",
+        "body": "[SALES-E2E-COMPLEX-20260531060204]\nStep: CUSTOMER-A-INQUIRY\n\nHui 你好，\n\n我们实验室正在评估科研用一抗产品，主要用于人源样本 Western blot，后续也希望做 IHC 验证。请推荐合适的一抗产品，并提供 datasheet、验证数据、现货情况、交期和报价。\n\n谢谢，\nAlex Chen",
+        "bodyLength": 179
+      },
+      "sentRecord": {
+        "folder": "已发送",
+        "uid": "1780045525",
+        "messageId": "<178020734326.67985.5802677928728210702.SALES-E2E-COMPLEX-20260531060204.customer-a-inquiry@leads-e2e.local>",
+        "from": "Alex Chen <gs_customer_01@163.com>",
+        "to": "Hui Li <gs_sales_01@163.com>",
+        "cc": "",
+        "date": "2026-05-31T06:02:23Z",
+        "subject": "[SALES-E2E-COMPLEX-20260531060204] 一抗产品咨询：WB 和 IHC 验证",
+        "body": "[SALES-E2E-COMPLEX-20260531060204]\nStep: CUSTOMER-A-INQUIRY\n\nHui 你好，\n\n我们实验室正在评估科研用一抗产品，主要用于人源样本 Western blot，后续也希望做 IHC 验证。请推荐合适的一抗产品，并提供 datasheet、验证数据、现货情况、交期和报价。\n\n谢谢，\nAlex Chen",
+        "bodyLength": 179
+      }
+    },
+    {
+      "event": {
+        "step": "CUSTOMER-B-INQUIRY",
+        "sender": "gs_customer_02@163.com",
+        "recipient": "gs_sales_01@163.com",
+        "customerName": "Morgan Lee",
+        "subject": "一抗产品咨询：IF 染色筛选",
+        "body": "Hui 你好，\n\n我们正在为细胞免疫荧光实验筛选科研用一抗产品，样本是培养的人源细胞。请推荐适合 IF 应用的一抗产品，并提供 datasheet、验证图片、推荐稀释比例、现货情况、交期和报价。\n\n谢谢，\nMorgan Lee"
+      },
+      "sent": {
+        "step": "CUSTOMER-B-INQUIRY",
+        "messageId": "<178020734805.67985.12329721343477162594.SALES-E2E-COMPLEX-20260531060204.customer-b-inquiry@leads-e2e.local>",
+        "subject": "[SALES-E2E-COMPLEX-20260531060204] 一抗产品咨询：IF 染色筛选",
+        "from": "gs_customer_02@163.com",
+        "to": "gs_sales_01@163.com",
+        "smtpSent": true,
+        "sentAppendStatus": {
+          "status": "skipped",
+          "folder": null,
+          "reason": "SMTP-saved copy already visible"
+        },
+        "recipientInboxAppendStatus": {
+          "status": "skipped",
+          "folder": "INBOX",
+          "reason": "SMTP-delivered copy already visible"
+        }
+      },
+      "received": {
+        "folder": "INBOX",
+        "uid": "1780044772",
+        "messageId": "<178020734805.67985.12329721343477162594.SALES-E2E-COMPLEX-20260531060204.customer-b-inquiry@leads-e2e.local>",
+        "from": "Morgan Lee <gs_customer_02@163.com>",
+        "to": "Hui Li <gs_sales_01@163.com>",
+        "cc": "",
+        "date": "2026-05-31T06:02:28Z",
+        "subject": "[SALES-E2E-COMPLEX-20260531060204] 一抗产品咨询：IF 染色筛选",
+        "body": "[SALES-E2E-COMPLEX-20260531060204]\nStep: CUSTOMER-B-INQUIRY\n\nHui 你好，\n\n我们正在为细胞免疫荧光实验筛选科研用一抗产品，样本是培养的人源细胞。请推荐适合 IF 应用的一抗产品，并提供 datasheet、验证图片、推荐稀释比例、现货情况、交期和报价。\n\n谢谢，\nMorgan Lee",
+        "bodyLength": 174
+      },
+      "sentRecord": {
+        "folder": "已发送",
+        "uid": "1780156822",
+        "messageId": "<178020734805.67985.12329721343477162594.SALES-E2E-COMPLEX-20260531060204.customer-b-inquiry@leads-e2e.local>",
+        "from": "Morgan Lee <gs_customer_02@163.com>",
+        "to": "Hui Li <gs_sales_01@163.com>",
+        "cc": "",
+        "date": "2026-05-31T06:02:28Z",
+        "subject": "[SALES-E2E-COMPLEX-20260531060204] 一抗产品咨询：IF 染色筛选",
+        "body": "[SALES-E2E-COMPLEX-20260531060204]\nStep: CUSTOMER-B-INQUIRY\n\nHui 你好，\n\n我们正在为细胞免疫荧光实验筛选科研用一抗产品，样本是培养的人源细胞。请推荐适合 IF 应用的一抗产品，并提供 datasheet、验证图片、推荐稀释比例、现货情况、交期和报价。\n\n谢谢，\nMorgan Lee",
+        "bodyLength": 174
+      }
+    },
+    {
+      "event": {
+        "step": "SALES-REPLY-A",
+        "sender": "gs_sales_01@163.com",
+        "recipient": "gs_customer_01@163.com",
+        "subject": "Re: 一抗产品咨询：WB 和 IHC 验证",
+        "body": "Alex 你好，\n\n感谢咨询。请补充目标蛋白名称、样本物种和样本类型，我们会整理 2 个 WB/IHC 一抗候选产品、datasheet、库存、交期和报价。\n\n谢谢，\nHui Li"
+      },
+      "sent": {
+        "step": "SALES-REPLY-A",
+        "messageId": "<178020740857.67985.1426169870740266615.SALES-E2E-COMPLEX-20260531060204.sales-reply-a@leads-e2e.local>",
+        "subject": "[SALES-E2E-COMPLEX-20260531060204] Re: 一抗产品咨询：WB 和 IHC 验证",
+        "from": "gs_sales_01@163.com",
+        "to": "gs_customer_01@163.com",
+        "smtpSent": true,
+        "sentAppendStatus": {
+          "status": "skipped",
+          "folder": null,
+          "reason": "SMTP-saved copy already visible"
+        },
+        "recipientInboxAppendStatus": {
+          "status": "skipped",
+          "folder": "INBOX",
+          "reason": "SMTP-delivered copy already visible"
+        }
+      },
+      "received": {
+        "folder": "INBOX",
+        "uid": "1780044841",
+        "messageId": "<178020740857.67985.1426169870740266615.SALES-E2E-COMPLEX-20260531060204.sales-reply-a@leads-e2e.local>",
+        "from": "Hui Li <gs_sales_01@163.com>",
+        "to": "Alex Chen <gs_customer_01@163.com>",
+        "cc": "",
+        "date": "2026-05-31T06:03:28Z",
+        "subject": "[SALES-E2E-COMPLEX-20260531060204] Re: 一抗产品咨询：WB 和 IHC 验证",
+        "body": "[SALES-E2E-COMPLEX-20260531060204]\nStep: SALES-REPLY-A\n\nAlex 你好，\n\n感谢咨询。请补充目标蛋白名称、样本物种和样本类型，我们会整理 2 个 WB/IHC 一抗候选产品、datasheet、库存、交期和报价。\n\n谢谢，\nHui Li",
+        "bodyLength": 146
+      },
+      "sentRecord": {
+        "folder": "已发送",
+        "uid": "1780107711",
+        "messageId": "<178020740857.67985.1426169870740266615.SALES-E2E-COMPLEX-20260531060204.sales-reply-a@leads-e2e.local>",
+        "from": "Hui Li <gs_sales_01@163.com>",
+        "to": "Alex Chen <gs_customer_01@163.com>",
+        "cc": "",
+        "date": "2026-05-31T06:03:28Z",
+        "subject": "[SALES-E2E-COMPLEX-20260531060204] Re: 一抗产品咨询：WB 和 IHC 验证",
+        "body": "[SALES-E2E-COMPLEX-20260531060204]\nStep: SALES-REPLY-A\n\nAlex 你好，\n\n感谢咨询。请补充目标蛋白名称、样本物种和样本类型，我们会整理 2 个 WB/IHC 一抗候选产品、datasheet、库存、交期和报价。\n\n谢谢，\nHui Li",
+        "bodyLength": 146
+      }
+    },
+    {
+      "event": {
+        "step": "SALES-REPLY-B",
+        "sender": "gs_sales_01@163.com",
+        "recipient": "gs_customer_02@163.com",
+        "subject": "Re: 一抗产品咨询：IF 染色筛选",
+        "body": "Morgan 你好，\n\n感谢咨询。针对 IF 染色筛选，请补充目标 marker 和细胞类型，我们会整理 3 个 IF 一抗候选产品、验证图片、库存、交期和报价。\n\n谢谢，\nHui Li"
+      },
+      "sent": {
+        "step": "SALES-REPLY-B",
+        "messageId": "<178020741350.67985.8768390984671638874.SALES-E2E-COMPLEX-20260531060204.sales-reply-b@leads-e2e.local>",
+        "subject": "[SALES-E2E-COMPLEX-20260531060204] Re: 一抗产品咨询：IF 染色筛选",
+        "from": "gs_sales_01@163.com",
+        "to": "gs_customer_02@163.com",
+        "smtpSent": true,
+        "sentAppendStatus": {
+          "status": "skipped",
+          "folder": null,
+          "reason": "SMTP-saved copy already visible"
+        },
+        "recipientInboxAppendStatus": {
+          "status": "skipped",
+          "folder": "INBOX",
+          "reason": "SMTP-delivered copy already visible"
+        }
+      },
+      "received": {
+        "folder": "INBOX",
+        "uid": "1780155306",
+        "messageId": "<178020741350.67985.8768390984671638874.SALES-E2E-COMPLEX-20260531060204.sales-reply-b@leads-e2e.local>",
+        "from": "Hui Li <gs_sales_01@163.com>",
+        "to": "Morgan Lee <gs_customer_02@163.com>",
+        "cc": "",
+        "date": "2026-05-31T06:03:33Z",
+        "subject": "[SALES-E2E-COMPLEX-20260531060204] Re: 一抗产品咨询：IF 染色筛选",
+        "body": "[SALES-E2E-COMPLEX-20260531060204]\nStep: SALES-REPLY-B\n\nMorgan 你好，\n\n感谢咨询。针对 IF 染色筛选，请补充目标 marker 和细胞类型，我们会整理 3 个 IF 一抗候选产品、验证图片、库存、交期和报价。\n\n谢谢，\nHui Li",
+        "bodyLength": 149
+      },
+      "sentRecord": {
+        "folder": "已发送",
+        "uid": "1780107712",
+        "messageId": "<178020741350.67985.8768390984671638874.SALES-E2E-COMPLEX-20260531060204.sales-reply-b@leads-e2e.local>",
+        "from": "Hui Li <gs_sales_01@163.com>",
+        "to": "Morgan Lee <gs_customer_02@163.com>",
+        "cc": "",
+        "date": "2026-05-31T06:03:33Z",
+        "subject": "[SALES-E2E-COMPLEX-20260531060204] Re: 一抗产品咨询：IF 染色筛选",
+        "body": "[SALES-E2E-COMPLEX-20260531060204]\nStep: SALES-REPLY-B\n\nMorgan 你好，\n\n感谢咨询。针对 IF 染色筛选，请补充目标 marker 和细胞类型，我们会整理 3 个 IF 一抗候选产品、验证图片、库存、交期和报价。\n\n谢谢，\nHui Li",
+        "bodyLength": 149
+      }
+    },
+    {
+      "event": {
+        "step": "CUSTOMER-A-FOLLOWUP",
+        "sender": "gs_customer_01@163.com",
+        "recipient": "gs_sales_01@163.com",
+        "customerName": "Alex Chen",
+        "subject": "Re: 一抗产品咨询：WB 和 IHC 验证",
+        "body": "Hui 你好，\n\n补充：目标是人源肿瘤相关 marker，样本是细胞裂解液。请优先推荐 2 个科研用一抗候选产品，并附 datasheet、推荐稀释比例、验证依据、库存、交期和报价。\n\n谢谢，\nAlex"
+      },
+      "sent": {
+        "step": "CUSTOMER-A-FOLLOWUP",
+        "messageId": "<178020745407.67985.424166695196856758.SALES-E2E-COMPLEX-20260531060204.customer-a-followup@leads-e2e.local>",
+        "subject": "[SALES-E2E-COMPLEX-20260531060204] Re: 一抗产品咨询：WB 和 IHC 验证",
+        "from": "gs_customer_01@163.com",
+        "to": "gs_sales_01@163.com",
+        "smtpSent": true,
+        "sentAppendStatus": {
+          "status": "skipped",
+          "folder": null,
+          "reason": "SMTP-saved copy already visible"
+        },
+        "recipientInboxAppendStatus": {
+          "status": "skipped",
+          "folder": "INBOX",
+          "reason": "SMTP-delivered copy already visible"
+        }
+      },
+      "received": {
+        "folder": "INBOX",
+        "uid": "1780044773",
+        "messageId": "<178020745407.67985.424166695196856758.SALES-E2E-COMPLEX-20260531060204.customer-a-followup@leads-e2e.local>",
+        "from": "Alex Chen <gs_customer_01@163.com>",
+        "to": "Hui Li <gs_sales_01@163.com>",
+        "cc": "",
+        "date": "2026-05-31T06:04:14Z",
+        "subject": "[SALES-E2E-COMPLEX-20260531060204] Re: 一抗产品咨询：WB 和 IHC 验证",
+        "body": "[SALES-E2E-COMPLEX-20260531060204]\nStep: CUSTOMER-A-FOLLOWUP\n\nHui 你好，\n\n补充：目标是人源肿瘤相关 marker，样本是细胞裂解液。请优先推荐 2 个科研用一抗候选产品，并附 datasheet、推荐稀释比例、验证依据、库存、交期和报价。\n\n谢谢，\nAlex",
+        "bodyLength": 163
+      },
+      "sentRecord": {
+        "folder": "已发送",
+        "uid": "1780045526",
+        "messageId": "<178020745407.67985.424166695196856758.SALES-E2E-COMPLEX-20260531060204.customer-a-followup@leads-e2e.local>",
+        "from": "Alex Chen <gs_customer_01@163.com>",
+        "to": "Hui Li <gs_sales_01@163.com>",
+        "cc": "",
+        "date": "2026-05-31T06:04:14Z",
+        "subject": "[SALES-E2E-COMPLEX-20260531060204] Re: 一抗产品咨询：WB 和 IHC 验证",
+        "body": "[SALES-E2E-COMPLEX-20260531060204]\nStep: CUSTOMER-A-FOLLOWUP\n\nHui 你好，\n\n补充：目标是人源肿瘤相关 marker，样本是细胞裂解液。请优先推荐 2 个科研用一抗候选产品，并附 datasheet、推荐稀释比例、验证依据、库存、交期和报价。\n\n谢谢，\nAlex",
+        "bodyLength": 163
+      }
+    },
+    {
+      "event": {
+        "step": "CUSTOMER-B-FOLLOWUP",
+        "sender": "gs_customer_02@163.com",
+        "recipient": "gs_sales_01@163.com",
+        "customerName": "Morgan Lee",
+        "subject": "Re: 一抗产品咨询：IF 染色筛选",
+        "body": "Hui 你好，\n\n补充：样本是固定后的人源培养细胞，应用只做 IF。请提供 3 个科研用一抗候选产品的 datasheet、IF 验证图片、推荐稀释比例、库存状态、交期和报价。\n\n谢谢，\nMorgan"
+      },
+      "sent": {
+        "step": "CUSTOMER-B-FOLLOWUP",
+        "messageId": "<178020745941.67985.10601322670607138162.SALES-E2E-COMPLEX-20260531060204.customer-b-followup@leads-e2e.local>",
+        "subject": "[SALES-E2E-COMPLEX-20260531060204] Re: 一抗产品咨询：IF 染色筛选",
+        "from": "gs_customer_02@163.com",
+        "to": "gs_sales_01@163.com",
+        "smtpSent": true,
+        "sentAppendStatus": {
+          "status": "skipped",
+          "folder": null,
+          "reason": "SMTP-saved copy already visible"
+        },
+        "recipientInboxAppendStatus": {
+          "status": "skipped",
+          "folder": "INBOX",
+          "reason": "SMTP-delivered copy already visible"
+        }
+      },
+      "received": {
+        "folder": "INBOX",
+        "uid": "1780044774",
+        "messageId": "<178020745941.67985.10601322670607138162.SALES-E2E-COMPLEX-20260531060204.customer-b-followup@leads-e2e.local>",
+        "from": "Morgan Lee <gs_customer_02@163.com>",
+        "to": "Hui Li <gs_sales_01@163.com>",
+        "cc": "",
+        "date": "2026-05-31T06:04:19Z",
+        "subject": "[SALES-E2E-COMPLEX-20260531060204] Re: 一抗产品咨询：IF 染色筛选",
+        "body": "[SALES-E2E-COMPLEX-20260531060204]\nStep: CUSTOMER-B-FOLLOWUP\n\nHui 你好，\n\n补充：样本是固定后的人源培养细胞，应用只做 IF。请提供 3 个科研用一抗候选产品的 datasheet、IF 验证图片、推荐稀释比例、库存状态、交期和报价。\n\n谢谢，\nMorgan",
+        "bodyLength": 162
+      },
+      "sentRecord": {
+        "folder": "已发送",
+        "uid": "1780156823",
+        "messageId": "<178020745941.67985.10601322670607138162.SALES-E2E-COMPLEX-20260531060204.customer-b-followup@leads-e2e.local>",
+        "from": "Morgan Lee <gs_customer_02@163.com>",
+        "to": "Hui Li <gs_sales_01@163.com>",
+        "cc": "",
+        "date": "2026-05-31T06:04:19Z",
+        "subject": "[SALES-E2E-COMPLEX-20260531060204] Re: 一抗产品咨询：IF 染色筛选",
+        "body": "[SALES-E2E-COMPLEX-20260531060204]\nStep: CUSTOMER-B-FOLLOWUP\n\nHui 你好，\n\n补充：样本是固定后的人源培养细胞，应用只做 IF。请提供 3 个科研用一抗候选产品的 datasheet、IF 验证图片、推荐稀释比例、库存状态、交期和报价。\n\n谢谢，\nMorgan",
+        "bodyLength": 162
+      }
+    }
+  ],
+  "turns": [
+    {
+      "content": "请检查销售邮箱上下文，处理新的客户咨询邮件，并在需要时创建 lead 与 follow-up task。",
+      "response": "{\"trace\":{\"type\":\"AGENT_START\",\"name\":\"Sales Leads Agent\",\"description\":\"Agent 开始观察邮箱和后端上下文，并自主决策需要执行的动作\",\"status\":\"running\",\"workerId\":\"sales-leads-agent\",\"callId\":\"759b5db3-23f0-4b90-b270-8b7ad37bb459\",\"nodeName\":\"single-agent\",\"toolName\":\"agent\",\"input\":\"请检查销售邮箱上下文，处理新的客户咨询邮件，并在需要时创建 lead 与 follow-up task。\",\"output\":null,\"timestamp\":1780207353057,\"elapsedMs\":null,\"durationMs\":null,\"outputLength\":null,\"stateSnapshot\":{\"agentId\":131,\"sessionId\":\"759b5db3-23f0-4b90-b270-8b7ad37bb459\"}},\"event\":\"trace\"}好的，我先检查邮箱上下文和未读邮件好的，当前销售邮箱是 `gs_sales_01@163.com`，有两封新的客户咨询邮件。我先查一下这两封邮件的产品类目和已有上下文。两封邮件都明确指向 **CPBU_ANTIBODIES_RUO_ANTIBODIES_PRIMARY_ANTIBODIES**（科研用一抗），最高置信度。现在查已有上下文，确认是否已有同客户同类目的线索两个客户都没有已有线索，都是全新咨询。现在创建lead和follow-uptask两个lead都创建成功。现在创建 follow-up task全部处理完毕，以下是汇总：**Leads：**新建了2条。Alex Chen（gs_customer_01）和Morgan Lee（gs_customer_02）分别发来科研用一抗咨询，后端均无同客户同类目线索，已分别创建LEAD-94EF3CD22417和LEAD-C45D8691B6B8，类目都是科研用一抗。**Follow-uptask：**已创建2个。Alex需要 WB/IHC一抗推荐及 datasheet、报价、现货交期；Morgan需要 IF一抗推荐及验证图片、稀释比例、报价。两个 task均已生成，建议尽快跟进。**Activity：**未同步，本轮只处理了收件箱客户新咨询，没有扫描已发送邮件。",
+      "rawLines": [
+        "data:{\"trace\":{\"type\":\"AGENT_START\",\"name\":\"Sales Leads Agent\",\"description\":\"Agent 开始观察邮箱和后端上下文，并自主决策需要执行的动作\",\"status\":\"running\",\"workerId\":\"sales-leads-agent\",\"callId\":\"759b5db3-23f0-4b90-b270-8b7ad37bb459\",\"nodeName\":\"single-agent\",\"toolName\":\"agent\",\"input\":\"请检查销售邮箱上下文，处理新的客户咨询邮件，并在需要时创建 lead 与 follow-up task。\",\"output\":null,\"timestamp\":1780207353057,\"elapsedMs\":null,\"durationMs\":null,\"outputLength\":null,\"stateSnapshot\":{\"agentId\":131,\"sessionId\":\"759b5db3-23f0-4b90-b270-8b7ad37bb459\"}},\"event\":\"trace\"}",
+        "data:好的",
+        "data:，",
+        "data:我先",
+        "data:检查邮箱",
+        "data:上下文和",
+        "data:未",
+        "data:读邮件",
+        "data:好的",
+        "data:，",
+        "data:当前",
+        "data:销售邮箱",
+        "data:是 `",
+        "data:gs",
+        "data:_sales",
+        "data:_01",
+        "data:@",
+        "data:163.com",
+        "data:`，",
+        "data:有两",
+        "data:封新的",
+        "data:客户咨询",
+        "data:邮件",
+        "data:。我先",
+        "data:查一下",
+        "data:这两",
+        "data:封邮",
+        "data:件的产品",
+        "data:类",
+        "data:目和",
+        "data:已有上下文",
+        "data:。",
+        "data:",
+        "data:",
+        "data:两",
+        "data:封",
+        "data:邮件",
+        "data:都明确",
+        "data:指向 **",
+        "data:CP",
+        "data:BU_",
+        "data:ANTIB",
+        "data:OD",
+        "data:IES_R",
+        "data:UO",
+        "data:_",
+        "data:ANTIB",
+        "data:ODIES",
+        "data:_PR",
+        "data:IMARY_",
+        "data:ANTIB",
+        "data:OD",
+        "data:IES**",
+        "data:（科研",
+        "data:用",
+        "data:一抗",
+        "data:），最高",
+        "data:置信",
+        "data:度。",
+        "data:现在查",
+        "data:已有",
+        "data:上下文，",
+        "data:确认是否",
+        "data:已有",
+        "data:同客户",
+        "data:同类目的",
+        "data:线索",
+        "data:两个",
+        "data:客户",
+        "data:都没有",
+        "data:已有线索",
+        "data:，都是",
+        "data:全新",
+        "data:咨询。",
+        "data:现在创建",
+        "data: lead",
+        "data: 和",
+        "data: follow-up",
+        "data: task",
+        "data:两个",
+        "data: lead",
+        "data: ",
+        "data:都创建",
+        "data:成功。",
+        "data:现在",
+        "data:创建 follow",
+        "data:-up task",
+        "data:",
+        "data:",
+        "data:",
+        "data:全部",
+        "data:处理",
+        "data:完毕",
+        "data:，以下是",
+        "data:汇总：",
+        "data:",
+        "data:",
+        "data:**",
+        "data:Leads",
+        "data:：**",
+        "data: ",
+        "data:新建了",
+        "data: 2",
+        "data: ",
+        "data:条。",
+        "data:Alex Chen",
+        "data:（",
+        "data:gs_c",
+        "data:ustomer_",
+        "data:01",
+        "data:）和",
+        "data: Morgan Lee",
+        "data:（",
+        "data:gs_c",
+        "data:ustomer_",
+        "data:02",
+        "data:）分别",
+        "data:发来",
+        "data:科研",
+        "data:用一",
+        "data:抗咨询",
+        "data:，",
+        "data:后端均",
+        "data:无同",
+        "data:客户",
+        "data:同类目",
+        "data:线索，",
+        "data:已",
+        "data:分别创建",
+        "data: LEAD-",
+        "data:94",
+        "data:EF3",
+        "data:CD224",
+        "data:17",
+        "data: 和",
+        "data: LEAD-C",
+        "data:45",
+        "data:D869",
+        "data:1B",
+        "data:6",
+        "data:B8",
+        "data:，类",
+        "data:目",
+        "data:都是科研",
+        "data:用一",
+        "data:抗",
+        "data:。",
+        "data:",
+        "data:**",
+        "data:Follow-up",
+        "data: task",
+        "data:：**",
+        "data: 已",
+        "data:创建",
+        "data: 2",
+        "data: 个",
+        "data:。",
+        "data:Alex ",
+        "data:需要 WB",
+        "data:/I",
+        "data:HC ",
+        "data:一抗",
+        "data:推荐",
+        "data:及 datas",
+        "data:heet、",
+        "data:报价",
+        "data:、现货",
+        "data:交期",
+        "data:；",
+        "data:Morgan ",
+        "data:需要 IF",
+        "data: ",
+        "data:一抗",
+        "data:推荐及",
+        "data:验证",
+        "data:图片、",
+        "data:稀释比例",
+        "data:、",
+        "data:报价。",
+        "data:两个 task",
+        "data: ",
+        "data:均已生成",
+        "data:，建议",
+        "data:尽快",
+        "data:跟进。",
+        "data:",
+        "data:",
+        "data:**Activity",
+        "data:：",
+        "data:** ",
+        "data:未同步",
+        "data:，",
+        "data:本轮只",
+        "data:处理了",
+        "data:收",
+        "data:件箱",
+        "data:客户新",
+        "data:咨询",
+        "data:，没有",
+        "data:扫描已",
+        "data:发送",
+        "data:邮件。",
+        "data:",
+        "data:[DONE]"
+      ],
+      "startedAt": "2026-05-31T06:02:32.942756Z",
+      "endedAt": "2026-05-31T06:03:26.506425Z",
+      "phase": "请检查销售邮箱上下文，处理新的客户咨询邮件，并在",
+      "attempt": 1
+    },
+    {
+      "content": "请检查销售最近已发送邮件，把销售对客户的业务跟进同步成 activity。不要发送邮件。",
+      "response": "{\"trace\":{\"type\":\"AGENT_START\",\"name\":\"Sales Leads Agent\",\"description\":\"Agent 开始观察邮箱和后端上下文，并自主决策需要执行的动作\",\"status\":\"running\",\"workerId\":\"sales-leads-agent\",\"callId\":\"759b5db3-23f0-4b90-b270-8b7ad37bb459\",\"nodeName\":\"single-agent\",\"toolName\":\"agent\",\"input\":\"请检查销售最近已发送邮件，把销售对客户的业务跟进同步成 activity。不要发送邮件。\",\"output\":null,\"timestamp\":1780207419187,\"elapsedMs\":null,\"durationMs\":null,\"outputLength\":null,\"stateSnapshot\":{\"agentId\":131,\"sessionId\":\"759b5db3-23f0-4b90-b270-8b7ad37bb459\"}},\"event\":\"trace\"}两封已发送邮件，都是销售Hui Li发给客户的业务跟进。先匹配已有 lead匹配清晰：Alex →LEAD-94EF3CD22417，Morgan→ LEAD-C45D8691B6B8。现在创建 activity全部完成，汇总如下：**Leads：**未新建，本轮只处理已发送邮件，不涉及新客户咨询。**Follow-up task：**未创建，已发送邮件不生成follow-uptask。**Activity：**已同步2条。Hui Li分别回复了 Alex（ACT-1C55EB53A322，请对方补充目标蛋白、物种和样本类型，承诺整理2个WB/IHC候选产品）和Morgan（ACT-B0124F6A9568，请对方补充目标 marker和细胞类型，承诺整理3个 IF候选产品），两封均已匹配到对应lead并写入 activity。",
+      "rawLines": [
+        "data:{\"trace\":{\"type\":\"AGENT_START\",\"name\":\"Sales Leads Agent\",\"description\":\"Agent 开始观察邮箱和后端上下文，并自主决策需要执行的动作\",\"status\":\"running\",\"workerId\":\"sales-leads-agent\",\"callId\":\"759b5db3-23f0-4b90-b270-8b7ad37bb459\",\"nodeName\":\"single-agent\",\"toolName\":\"agent\",\"input\":\"请检查销售最近已发送邮件，把销售对客户的业务跟进同步成 activity。不要发送邮件。\",\"output\":null,\"timestamp\":1780207419187,\"elapsedMs\":null,\"durationMs\":null,\"outputLength\":null,\"stateSnapshot\":{\"agentId\":131,\"sessionId\":\"759b5db3-23f0-4b90-b270-8b7ad37bb459\"}},\"event\":\"trace\"}",
+        "data:两",
+        "data:封",
+        "data:已",
+        "data:发送邮件",
+        "data:，都是",
+        "data:销售",
+        "data: Hui Li",
+        "data: 发给",
+        "data:客户的",
+        "data:业务跟进",
+        "data:。先",
+        "data:匹配",
+        "data:已有 lead",
+        "data:匹配",
+        "data:清晰",
+        "data:：",
+        "data:Alex →",
+        "data: LEAD-",
+        "data:94",
+        "data:EF3",
+        "data:CD224",
+        "data:17",
+        "data:，Morgan",
+        "data: → LEAD",
+        "data:-C",
+        "data:45D",
+        "data:8691",
+        "data:B",
+        "data:6B",
+        "data:8。",
+        "data:现在",
+        "data:创建 activity",
+        "data:全部",
+        "data:完成",
+        "data:，",
+        "data:汇总如下",
+        "data:：",
+        "data:",
+        "data:**",
+        "data:Le",
+        "data:ads：",
+        "data:** ",
+        "data:未",
+        "data:新建，",
+        "data:本轮只",
+        "data:处理",
+        "data:已发送",
+        "data:邮件，",
+        "data:不",
+        "data:涉及新",
+        "data:客户咨询",
+        "data:。",
+        "data:",
+        "data:",
+        "data:**Follow",
+        "data:-up task",
+        "data:：",
+        "data:** ",
+        "data:未创建",
+        "data:，",
+        "data:已发送",
+        "data:邮件不",
+        "data:生成",
+        "data: follow-up",
+        "data: task。",
+        "data:",
+        "data:",
+        "data:**",
+        "data:Activity：",
+        "data:** ",
+        "data:已",
+        "data:同步 ",
+        "data:2 ",
+        "data:条",
+        "data:。H",
+        "data:ui Li",
+        "data: ",
+        "data:分别回复",
+        "data:了 Alex",
+        "data:（",
+        "data:ACT-",
+        "data:1C",
+        "data:55",
+        "data:EB53",
+        "data:A322",
+        "data:，",
+        "data:请对方",
+        "data:补充目标",
+        "data:蛋白",
+        "data:、物种",
+        "data:和样本",
+        "data:类型",
+        "data:，承诺",
+        "data:整理 ",
+        "data:2",
+        "data: 个",
+        "data: WB/I",
+        "data:HC",
+        "data: 候选",
+        "data:产品）",
+        "data:和",
+        "data: Morgan（",
+        "data:ACT-B",
+        "data:012",
+        "data:4F",
+        "data:6A",
+        "data:956",
+        "data:8，",
+        "data:请对方",
+        "data:补充",
+        "data:目标 marker",
+        "data: 和",
+        "data:细胞",
+        "data:类型，",
+        "data:承诺整理",
+        "data: ",
+        "data:3 ",
+        "data:个 IF",
+        "data: ",
+        "data:候选产品",
+        "data:），两",
+        "data:封",
+        "data:均已匹配",
+        "data:到对应",
+        "data: lead",
+        "data: 并",
+        "data:写入 activity",
+        "data:。",
+        "data:",
+        "data:[DONE]"
+      ],
+      "startedAt": "2026-05-31T06:03:39.110192Z",
+      "endedAt": "2026-05-31T06:04:12.002533Z",
+      "phase": "请检查销售最近已发送邮件，把销售对客户的业务跟进",
+      "attempt": 1
+    },
+    {
+      "content": "请检查销售邮箱上下文，处理客户新的追问，并在需要时创建 follow-up task。",
+      "response": "{\"trace\":{\"type\":\"AGENT_START\",\"name\":\"Sales Leads Agent\",\"description\":\"Agent 开始观察邮箱和后端上下文，并自主决策需要执行的动作\",\"status\":\"running\",\"workerId\":\"sales-leads-agent\",\"callId\":\"759b5db3-23f0-4b90-b270-8b7ad37bb459\",\"nodeName\":\"single-agent\",\"toolName\":\"agent\",\"input\":\"请检查销售邮箱上下文，处理客户新的追问，并在需要时创建 follow-up task。\",\"output\":null,\"timestamp\":1780207464444,\"elapsedMs\":null,\"durationMs\":null,\"outputLength\":null,\"stateSnapshot\":{\"agentId\":131,\"sessionId\":\"759b5db3-23f0-4b90-b270-8b7ad37bb459\"}},\"event\":\"trace\"}两封都是客户追问，主题与之前一致。先查已有上下文确认匹配两封都是已有 lead的客户追问。Alex →LEAD-94EF3CD22417，Morgan→LEAD-C45D8691B6B8。现在写入入站邮件并创建新的follow-up task两个追问都匹配到已有 lead，未新建。现在创建新的 follow-up task全部处理完毕，汇总如下：**Leads：**未新建。Alex和 Morgan的追问都匹配到已有线索LEAD-94EF3CD22417和LEAD-C45D8691B6B8，同客户同类目，直接复用。**Follow-uptask：**已创建2个。Alex补充了人源肿瘤marker、细胞裂解液，要求推荐2个候选产品（TASK-88F730D13E7C）；Morgan补充了固定后人源培养细胞、仅做IF，要求3个候选产品（TASK-AB55F6921584）。两个客户都催着要 datasheet、报价和交期，需要尽快跟进。**Activity：**未同步，本轮只处理收件箱客户追问，不涉及已发送邮件。",
+      "rawLines": [
+        "data:{\"trace\":{\"type\":\"AGENT_START\",\"name\":\"Sales Leads Agent\",\"description\":\"Agent 开始观察邮箱和后端上下文，并自主决策需要执行的动作\",\"status\":\"running\",\"workerId\":\"sales-leads-agent\",\"callId\":\"759b5db3-23f0-4b90-b270-8b7ad37bb459\",\"nodeName\":\"single-agent\",\"toolName\":\"agent\",\"input\":\"请检查销售邮箱上下文，处理客户新的追问，并在需要时创建 follow-up task。\",\"output\":null,\"timestamp\":1780207464444,\"elapsedMs\":null,\"durationMs\":null,\"outputLength\":null,\"stateSnapshot\":{\"agentId\":131,\"sessionId\":\"759b5db3-23f0-4b90-b270-8b7ad37bb459\"}},\"event\":\"trace\"}",
+        "data:两",
+        "data:封",
+        "data:都是",
+        "data:客户追问",
+        "data:，主题",
+        "data:与",
+        "data:之前一致",
+        "data:。先",
+        "data:查",
+        "data:已有上下文",
+        "data:确认匹配",
+        "data:",
+        "data:",
+        "data:",
+        "data:两",
+        "data:封",
+        "data:都是",
+        "data:已有 lead",
+        "data: 的",
+        "data:客户",
+        "data:追问。",
+        "data:Alex →",
+        "data: LEAD",
+        "data:-94",
+        "data:EF3",
+        "data:CD",
+        "data:22417",
+        "data:，Morgan",
+        "data: →",
+        "data: LEAD-C",
+        "data:45D",
+        "data:869",
+        "data:1B",
+        "data:6B",
+        "data:8",
+        "data:。现在",
+        "data:写入入",
+        "data:站",
+        "data:邮件并",
+        "data:创建新的",
+        "data: follow",
+        "data:-up task",
+        "data:两个",
+        "data:追问",
+        "data:都",
+        "data:匹配到",
+        "data:已有 lead",
+        "data:，",
+        "data:未新建",
+        "data:。现在",
+        "data:创建",
+        "data:新的 follow",
+        "data:-up task",
+        "data:",
+        "data:",
+        "data:",
+        "data:全部",
+        "data:处理",
+        "data:完毕",
+        "data:，汇总",
+        "data:如下：",
+        "data:",
+        "data:",
+        "data:**",
+        "data:Leads",
+        "data:：**",
+        "data: ",
+        "data:未新建",
+        "data:。Alex",
+        "data: ",
+        "data:和 Morgan",
+        "data: 的",
+        "data:追问",
+        "data:都匹配",
+        "data:到已有",
+        "data:线索",
+        "data: LEAD-",
+        "data:94EF",
+        "data:3",
+        "data:CD224",
+        "data:17 ",
+        "data:和",
+        "data: LEAD-C",
+        "data:45D",
+        "data:869",
+        "data:1B",
+        "data:6B",
+        "data:8",
+        "data:，同",
+        "data:客户同类",
+        "data:目",
+        "data:，直接",
+        "data:复用。",
+        "data:",
+        "data:",
+        "data:**",
+        "data:Follow-up",
+        "data: task：",
+        "data:**",
+        "data: 已",
+        "data:创建 ",
+        "data:2",
+        "data: 个",
+        "data:。Alex",
+        "data: ",
+        "data:补充了",
+        "data:人源",
+        "data:肿瘤",
+        "data: marker、",
+        "data:细胞裂",
+        "data:解",
+        "data:液，",
+        "data:要求推荐",
+        "data: ",
+        "data:2 ",
+        "data:个候选",
+        "data:产品",
+        "data:（T",
+        "data:ASK-",
+        "data:88",
+        "data:F730",
+        "data:D13",
+        "data:E",
+        "data:7C",
+        "data:）；Morgan",
+        "data: ",
+        "data:补充了",
+        "data:固定后人",
+        "data:源",
+        "data:培养细胞",
+        "data:、仅",
+        "data:做",
+        "data: IF，",
+        "data:要求 ",
+        "data:3",
+        "data: 个",
+        "data:候选产品",
+        "data:（",
+        "data:TASK",
+        "data:-AB",
+        "data:55",
+        "data:F692",
+        "data:1584",
+        "data:）。",
+        "data:两个客户",
+        "data:都催",
+        "data:着",
+        "data:要 datas",
+        "data:heet、",
+        "data:报价",
+        "data:和交",
+        "data:期，",
+        "data:需要",
+        "data:尽快跟进",
+        "data:。",
+        "data:",
+        "data:**",
+        "data:Activity",
+        "data:：**",
+        "data: 未",
+        "data:同步",
+        "data:，本轮",
+        "data:只处理",
+        "data:收",
+        "data:件箱",
+        "data:客户追问",
+        "data:，",
+        "data:不涉及",
+        "data:已发送",
+        "data:邮件",
+        "data:。",
+        "data:",
+        "data:[DONE]"
+      ],
+      "startedAt": "2026-05-31T06:04:24.372606Z",
+      "endedAt": "2026-05-31T06:05:14.608828Z",
+      "phase": "请检查销售邮箱上下文，处理客户新的追问，并在需要",
+      "attempt": 1
+    }
+  ],
+  "traceEvents": [
+    {
+      "type": "AGENT_START",
+      "name": "Sales Leads Agent",
+      "description": "Agent 开始观察邮箱和后端上下文，并自主决策需要执行的动作",
+      "status": "running",
+      "workerId": "sales-leads-agent",
+      "callId": "759b5db3-23f0-4b90-b270-8b7ad37bb459",
+      "nodeName": "single-agent",
+      "toolName": "agent",
+      "input": "请检查销售邮箱上下文，处理新的客户咨询邮件，并在需要时创建 lead 与 follow-up task。",
+      "output": null,
+      "timestamp": 1780207353057,
+      "elapsedMs": null,
+      "durationMs": null,
+      "outputLength": null,
+      "stateSnapshot": {
+        "agentId": 131,
+        "sessionId": "759b5db3-23f0-4b90-b270-8b7ad37bb459"
+      }
+    },
+    {
+      "type": "AGENT_COMPLETE",
+      "name": "Sales Leads Agent",
+      "description": "Agent 完成上下文处理并返回总结",
+      "status": "completed",
+      "workerId": "sales-leads-agent",
+      "callId": "759b5db3-23f0-4b90-b270-8b7ad37bb459",
+      "nodeName": "single-agent",
+      "toolName": "agent",
+      "input": null,
+      "output": "好的，我先检查邮箱上下文和未读邮件好的，当前销售邮箱是 `gs_sales_01@163.com`，有两封新的客户咨询邮件。我先查一下这两封邮件的产品类目和已有上下文。\n\n两封邮件都明确指向 **CPBU_ANTIBODIES_RUO_ANTIBODIES_PRIMARY_ANTIBODIES**（科研用一抗），最高置信度。现在查已有上下文，确认是否已有同客户同类目的线索两个客户都没有已有线索，都是全新咨询。现在创建 lead 和 follow-up task两个 lead 都创建成功。现在创建 follow-up task\n\n全部处理完毕，以下是汇总：\n\n**Leads：** 新建了 2 条。Alex Chen（gs_customer_01）和 Morgan Lee（gs_customer_02）分别发来科研用一抗咨询，后端均无同客户同类目线索，已分别创建 LEAD-94EF3CD22417 和 LEAD-C45D8691B6B8，类目都是科研用一抗。\n\n**Follow-up task：** 已创建 2 个。Alex 需要 WB/IHC 一抗推荐及 datasheet、报价、现货交期；Morgan 需要 IF 一抗推荐及验证图片、稀释比例、报价。两个 task 均已生成，建议尽快跟进。\n\n**Activity：** 未同步，本轮只处理了收件箱客户新咨询，没有扫描已发送邮件。",
+      "timestamp": 1780207406505,
+      "elapsedMs": null,
+      "durationMs": null,
+      "outputLength": 598,
+      "stateSnapshot": {
+        "agentId": 131,
+        "sessionId": "759b5db3-23f0-4b90-b270-8b7ad37bb459"
+      }
+    },
+    {
+      "type": "AGENT_START",
+      "name": "Sales Leads Agent",
+      "description": "Agent 开始观察邮箱和后端上下文，并自主决策需要执行的动作",
+      "status": "running",
+      "workerId": "sales-leads-agent",
+      "callId": "759b5db3-23f0-4b90-b270-8b7ad37bb459",
+      "nodeName": "single-agent",
+      "toolName": "agent",
+      "input": "请检查销售最近已发送邮件，把销售对客户的业务跟进同步成 activity。不要发送邮件。",
+      "output": null,
+      "timestamp": 1780207419187,
+      "elapsedMs": null,
+      "durationMs": null,
+      "outputLength": null,
+      "stateSnapshot": {
+        "agentId": 131,
+        "sessionId": "759b5db3-23f0-4b90-b270-8b7ad37bb459"
+      }
+    },
+    {
+      "type": "AGENT_COMPLETE",
+      "name": "Sales Leads Agent",
+      "description": "Agent 完成上下文处理并返回总结",
+      "status": "completed",
+      "workerId": "sales-leads-agent",
+      "callId": "759b5db3-23f0-4b90-b270-8b7ad37bb459",
+      "nodeName": "single-agent",
+      "toolName": "agent",
+      "input": null,
+      "output": "两封已发送邮件，都是销售 Hui Li 发给客户的业务跟进。先匹配已有 lead匹配清晰：Alex → LEAD-94EF3CD22417，Morgan → LEAD-C45D8691B6B8。现在创建 activity全部完成，汇总如下：\n\n**Leads：** 未新建，本轮只处理已发送邮件，不涉及新客户咨询。\n\n**Follow-up task：** 未创建，已发送邮件不生成 follow-up task。\n\n**Activity：** 已同步 2 条。Hui Li 分别回复了 Alex（ACT-1C55EB53A322，请对方补充目标蛋白、物种和样本类型，承诺整理 2 个 WB/IHC 候选产品）和 Morgan（ACT-B0124F6A9568，请对方补充目标 marker 和细胞类型，承诺整理 3 个 IF 候选产品），两封均已匹配到对应 lead 并写入 activity。",
+      "timestamp": 1780207452001,
+      "elapsedMs": null,
+      "durationMs": null,
+      "outputLength": 398,
+      "stateSnapshot": {
+        "agentId": 131,
+        "sessionId": "759b5db3-23f0-4b90-b270-8b7ad37bb459"
+      }
+    },
+    {
+      "type": "AGENT_START",
+      "name": "Sales Leads Agent",
+      "description": "Agent 开始观察邮箱和后端上下文，并自主决策需要执行的动作",
+      "status": "running",
+      "workerId": "sales-leads-agent",
+      "callId": "759b5db3-23f0-4b90-b270-8b7ad37bb459",
+      "nodeName": "single-agent",
+      "toolName": "agent",
+      "input": "请检查销售邮箱上下文，处理客户新的追问，并在需要时创建 follow-up task。",
+      "output": null,
+      "timestamp": 1780207464444,
+      "elapsedMs": null,
+      "durationMs": null,
+      "outputLength": null,
+      "stateSnapshot": {
+        "agentId": 131,
+        "sessionId": "759b5db3-23f0-4b90-b270-8b7ad37bb459"
+      }
+    },
+    {
+      "type": "AGENT_COMPLETE",
+      "name": "Sales Leads Agent",
+      "description": "Agent 完成上下文处理并返回总结",
+      "status": "completed",
+      "workerId": "sales-leads-agent",
+      "callId": "759b5db3-23f0-4b90-b270-8b7ad37bb459",
+      "nodeName": "single-agent",
+      "toolName": "agent",
+      "input": null,
+      "output": "两封都是客户追问，主题与之前一致。先查已有上下文确认匹配\n\n两封都是已有 lead 的客户追问。Alex → LEAD-94EF3CD22417，Morgan → LEAD-C45D8691B6B8。现在写入入站邮件并创建新的 follow-up task两个追问都匹配到已有 lead，未新建。现在创建新的 follow-up task\n\n全部处理完毕，汇总如下：\n\n**Leads：** 未新建。Alex 和 Morgan 的追问都匹配到已有线索 LEAD-94EF3CD22417 和 LEAD-C45D8691B6B8，同客户同类目，直接复用。\n\n**Follow-up task：** 已创建 2 个。Alex 补充了人源肿瘤 marker、细胞裂解液，要求推荐 2 个候选产品（TASK-88F730D13E7C）；Morgan 补充了固定后人源培养细胞、仅做 IF，要求 3 个候选产品（TASK-AB55F6921584）。两个客户都催着要 datasheet、报价和交期，需要尽快跟进。\n\n**Activity：** 未同步，本轮只处理收件箱客户追问，不涉及已发送邮件。",
+      "timestamp": 1780207514608,
+      "elapsedMs": null,
+      "durationMs": null,
+      "outputLength": 494,
+      "stateSnapshot": {
+        "agentId": 131,
+        "sessionId": "759b5db3-23f0-4b90-b270-8b7ad37bb459"
+      }
+    }
+  ],
+  "backend": {
+    "leads": {
+      "content": [
+        {
+          "id": "cba778b1-b036-493e-a9d7-a620faf36dcd",
+          "leadNo": "LEAD-94EF3CD22417",
+          "customerEmail": "gs_customer_01@163.com",
+          "customerEmailNormalized": "gs_customer_01@163.com",
+          "customerName": "gs_customer_01",
+          "company": null,
+          "title": null,
+          "phone": null,
+          "productBundle": {
+            "id": "0529ac34-2768-4a36-9403-376d6b14b3d6",
+            "code": "CPBU_ANTIBODIES_RUO_ANTIBODIES_PRIMARY_ANTIBODIES",
+            "pathEn": "CPBU > Antibodies > RUO Antibodies > Primary Antibodies",
+            "pathCn": "目录产品业务单元 > 抗体 > 科研用抗体 > 一抗",
+            "businessUnit": "CPBU",
+            "categoryLevel1": "Antibodies",
+            "categoryLevel2": "RUO Antibodies",
+            "categoryLevel3": "Primary Antibodies",
+            "synonyms": [
+              "Primary Antibodies",
+              "一抗"
+            ],
+            "active": true,
+            "createdAt": "2026-05-31T06:02:04.993207Z",
+            "updatedAt": "2026-05-31T06:02:04.993208Z"
+          },
+          "leadUniqueKey": "gs_customer_01@163.com + CPBU > Antibodies > RUO Antibodies > Primary Antibodies",
+          "ownerSalesEmail": "gs_sales_01@163.com",
+          "status": "ACTIVE",
+          "intentLevel": "MEDIUM",
+          "currentStage": "New Lead",
+          "timelineTrend": "STABLE",
+          "latestTimelineSummaryId": null,
+          "source": "Customer inbound inquiry email",
+          "inquirySummary": "[SALES-E2E-COMPLEX-20260531060204] Step: CUSTOMER-A-INQUIRY Hui 你好， 我们实验室正在评估科研用一抗产品，主要用于人源样本 Western blot，后续也希望做 IHC 验证。请推荐合适的一抗产品，并提供 datasheet、验证数据、现货情况、交期和报价。 谢谢， Alex Chen",
+          "extractedRequirements": {
+            "rawFromEmail": "gs_customer_01@163.com",
+            "lastInboundAt": "2026-05-31T06:03:08.207725Z",
+            "productReason": null,
+            "productBundleCode": "CPBU_ANTIBODIES_RUO_ANTIBODIES_PRIMARY_ANTIBODIES",
+            "productBundlePath": "CPBU > Antibodies > RUO Antibodies > Primary Antibodies",
+            "productConfidence": null,
+            "lastInboundSubject": "[SALES-E2E-COMPLEX-20260531060204] 一抗产品咨询：WB 和 IHC 验证",
+            "productBundlePathCn": "目录产品业务单元 > 抗体 > 科研用抗体 > 一抗",
+            "businessCustomerEmail": "gs_customer_01@163.com"
+          },
+          "firstEmailId": "d196f31b-bd57-4268-8003-cda4abf8ffff",
+          "latestEmailAt": "2026-05-31T06:04:07.312770Z",
+          "lastCustomerEmailAt": "2026-05-31T06:03:08.207725Z",
+          "lastSalesActivityAt": "2026-05-31T06:04:07.312770Z",
+          "createdBy": "SALES_LEADS_AGENT_GENERIC_ACTIVITY_SKILL",
+          "createdAt": "2026-05-31T06:03:08.236021Z",
+          "updatedAt": "2026-05-31T06:04:07.358984Z"
+        },
+        {
+          "id": "ef9c1c32-cd64-4d56-b3e2-fe25349bb603",
+          "leadNo": "LEAD-C45D8691B6B8",
+          "customerEmail": "gs_customer_02@163.com",
+          "customerEmailNormalized": "gs_customer_02@163.com",
+          "customerName": "gs_customer_02",
+          "company": null,
+          "title": null,
+          "phone": null,
+          "productBundle": {
+            "id": "0529ac34-2768-4a36-9403-376d6b14b3d6",
+            "code": "CPBU_ANTIBODIES_RUO_ANTIBODIES_PRIMARY_ANTIBODIES",
+            "pathEn": "CPBU > Antibodies > RUO Antibodies > Primary Antibodies",
+            "pathCn": "目录产品业务单元 > 抗体 > 科研用抗体 > 一抗",
+            "businessUnit": "CPBU",
+            "categoryLevel1": "Antibodies",
+            "categoryLevel2": "RUO Antibodies",
+            "categoryLevel3": "Primary Antibodies",
+            "synonyms": [
+              "Primary Antibodies",
+              "一抗"
+            ],
+            "active": true,
+            "createdAt": "2026-05-31T06:02:04.993207Z",
+            "updatedAt": "2026-05-31T06:02:04.993208Z"
+          },
+          "leadUniqueKey": "gs_customer_02@163.com + CPBU > Antibodies > RUO Antibodies > Primary Antibodies",
+          "ownerSalesEmail": "gs_sales_01@163.com",
+          "status": "ACTIVE",
+          "intentLevel": "MEDIUM",
+          "currentStage": "New Lead",
+          "timelineTrend": "STABLE",
+          "latestTimelineSummaryId": null,
+          "source": "Customer inbound inquiry email",
+          "inquirySummary": "[SALES-E2E-COMPLEX-20260531060204] Step: CUSTOMER-B-INQUIRY Hui 你好， 我们正在为细胞免疫荧光实验筛选科研用一抗产品，样本是培养的人源细胞。请推荐适合 IF 应用的一抗产品，并提供 datasheet、验证图片、推荐稀释比例、现货情况、交期和报价。 谢谢， Morgan Lee",
+          "extractedRequirements": {
+            "rawFromEmail": "gs_customer_02@163.com",
+            "lastInboundAt": "2026-05-31T06:03:08.363670Z",
+            "productReason": null,
+            "productBundleCode": "CPBU_ANTIBODIES_RUO_ANTIBODIES_PRIMARY_ANTIBODIES",
+            "productBundlePath": "CPBU > Antibodies > RUO Antibodies > Primary Antibodies",
+            "productConfidence": null,
+            "lastInboundSubject": "[SALES-E2E-COMPLEX-20260531060204] 一抗产品咨询：IF 染色筛选",
+            "productBundlePathCn": "目录产品业务单元 > 抗体 > 科研用抗体 > 一抗",
+            "businessCustomerEmail": "gs_customer_02@163.com"
+          },
+          "firstEmailId": "bb08045a-9d46-466d-a53f-9cb8bca2773b",
+          "latestEmailAt": "2026-05-31T06:04:07.452202Z",
+          "lastCustomerEmailAt": "2026-05-31T06:03:08.363670Z",
+          "lastSalesActivityAt": "2026-05-31T06:04:07.452202Z",
+          "createdBy": "SALES_LEADS_AGENT_GENERIC_ACTIVITY_SKILL",
+          "createdAt": "2026-05-31T06:03:08.385717Z",
+          "updatedAt": "2026-05-31T06:04:07.481995Z"
+        }
+      ],
+      "pageable": {
+        "pageNumber": 0,
+        "pageSize": 300,
+        "sort": {
+          "sorted": false,
+          "unsorted": true,
+          "empty": true
+        },
+        "offset": 0,
+        "paged": true,
+        "unpaged": false
+      },
+      "last": true,
+      "totalPages": 1,
+      "totalElements": 2,
+      "numberOfElements": 2,
+      "first": true,
+      "size": 300,
+      "number": 0,
+      "sort": {
+        "sorted": false,
+        "unsorted": true,
+        "empty": true
+      },
+      "empty": false
+    },
+    "emails": {
+      "content": [
+        {
+          "id": "d196f31b-bd57-4268-8003-cda4abf8ffff",
+          "providerEmailId": "AUTO-a5b7b476f3feebec3591ef766470e4118c45645c",
+          "mailbox": "gs_sales_01@163.com",
+          "threadId": "AUTO-c090354a812cfa92d4238d986ee178d96adc6299",
+          "direction": "INBOUND_CUSTOMER",
+          "fromEmail": "gs_customer_01@163.com",
+          "fromName": "gs_customer_01",
+          "toEmails": [
+            "gs_sales_01@163.com"
+          ],
+          "ccEmails": [],
+          "subject": "[SALES-E2E-COMPLEX-20260531060204] 一抗产品咨询：WB 和 IHC 验证",
+          "bodyText": "[SALES-E2E-COMPLEX-20260531060204]\nStep: CUSTOMER-A-INQUIRY\n\nHui 你好，\n\n我们实验室正在评估科研用一抗产品，主要用于人源样本 Western blot，后续也希望做 IHC 验证。请推荐合适的一抗产品，并提供 datasheet、验证数据、现货情况、交期和报价。\n\n谢谢，\nAlex Chen",
+          "bodyHtmlRef": null,
+          "snippet": "[SALES-E2E-COMPLEX-20260531060204] Step: CUSTOMER-A-INQUIRY Hui 你好， 我们实验室正在评估科研用一抗产品，主要用于人源样本 Western blot，后续也希望做 IHC 验证。请推荐合适的一抗产品，并提供 datasheet、验证数据、现货情况、交期和报价。 谢谢， Alex Chen",
+          "attachmentRefs": [],
+          "sentAt": null,
+          "receivedAt": "2026-05-31T06:03:08.207725Z",
+          "processedAt": "2026-05-31T06:03:08.220315Z",
+          "emailStatus": "PROCESSED",
+          "rawStorageRef": "{\"skill\": \"sales_lead_create_or_update_skill\"}",
+          "createdAt": "2026-05-31T06:03:08.227104Z"
+        },
+        {
+          "id": "bb08045a-9d46-466d-a53f-9cb8bca2773b",
+          "providerEmailId": "AUTO-974965260b7ce7dfa59e6f33b2dfb231f8b3ed23",
+          "mailbox": "gs_sales_01@163.com",
+          "threadId": "AUTO-f703f7ac7e9875a0273af5e2abc6068cb6a26d42",
+          "direction": "INBOUND_CUSTOMER",
+          "fromEmail": "gs_customer_02@163.com",
+          "fromName": "gs_customer_02",
+          "toEmails": [
+            "gs_sales_01@163.com"
+          ],
+          "ccEmails": [],
+          "subject": "[SALES-E2E-COMPLEX-20260531060204] 一抗产品咨询：IF 染色筛选",
+          "bodyText": "[SALES-E2E-COMPLEX-20260531060204]\nStep: CUSTOMER-B-INQUIRY\n\nHui 你好，\n\n我们正在为细胞免疫荧光实验筛选科研用一抗产品，样本是培养的人源细胞。请推荐适合 IF 应用的一抗产品，并提供 datasheet、验证图片、推荐稀释比例、现货情况、交期和报价。\n\n谢谢，\nMorgan Lee",
+          "bodyHtmlRef": null,
+          "snippet": "[SALES-E2E-COMPLEX-20260531060204] Step: CUSTOMER-B-INQUIRY Hui 你好， 我们正在为细胞免疫荧光实验筛选科研用一抗产品，样本是培养的人源细胞。请推荐适合 IF 应用的一抗产品，并提供 datasheet、验证图片、推荐稀释比例、现货情况、交期和报价。 谢谢， Morgan Lee",
+          "attachmentRefs": [],
+          "sentAt": null,
+          "receivedAt": "2026-05-31T06:03:08.363670Z",
+          "processedAt": "2026-05-31T06:03:08.374533Z",
+          "emailStatus": "PROCESSED",
+          "rawStorageRef": "{\"skill\": \"sales_lead_create_or_update_skill\"}",
+          "createdAt": "2026-05-31T06:03:08.380330Z"
+        },
+        {
+          "id": "dcdd4485-2fd3-46ed-aea3-33cb88f4494f",
+          "providerEmailId": "AUTO-b2221e51dea7a70797e5fa7b3324d8c610ccc1fc",
+          "mailbox": "gs_sales_01@163.com",
+          "threadId": "AUTO-859104119060e00cba431aeecfc4fabc3eafe7f8",
+          "direction": "OUTBOUND_SALES",
+          "fromEmail": "gs_sales_01@163.com",
+          "fromName": "Sales",
+          "toEmails": [
+            "gs_customer_01@163.com"
+          ],
+          "ccEmails": [],
+          "subject": "[SALES-E2E-COMPLEX-20260531060204] Re: 一抗产品咨询：WB 和 IHC 验证",
+          "bodyText": "[SALES-E2E-COMPLEX-20260531060204]\nStep: SALES-REPLY-A\n\nAlex 你好，\n\n感谢咨询。请补充目标蛋白名称、样本物种和样本类型，我们会整理 2 个 WB/IHC 一抗候选产品、datasheet、库存、交期和报价。\n\n谢谢，\nHui Li",
+          "bodyHtmlRef": null,
+          "snippet": "[SALES-E2E-COMPLEX-20260531060204] Step: SALES-REPLY-A Alex 你好， 感谢咨询。请补充目标蛋白名称、样本物种和样本类型，我们会整理 2 个 WB/IHC 一抗候选产品、datasheet、库存、交期和报价。 谢谢， Hui Li",
+          "attachmentRefs": [],
+          "sentAt": "2026-05-31T06:04:07.312770Z",
+          "receivedAt": null,
+          "processedAt": "2026-05-31T06:04:07.313139Z",
+          "emailStatus": "PROCESSED",
+          "rawStorageRef": "{\"skill\": \"sales_activity_create_skill\"}",
+          "createdAt": "2026-05-31T06:04:07.317554Z"
+        },
+        {
+          "id": "a1eac65c-35a8-4f3a-b084-b446ecb2ae08",
+          "providerEmailId": "AUTO-5d60d32d6696919807999b69dd0bcdc526816e2e",
+          "mailbox": "gs_sales_01@163.com",
+          "threadId": "AUTO-a6dec1476a5b02856cb515b1c9d400e75a54605b",
+          "direction": "OUTBOUND_SALES",
+          "fromEmail": "gs_sales_01@163.com",
+          "fromName": "Sales",
+          "toEmails": [
+            "gs_customer_02@163.com"
+          ],
+          "ccEmails": [],
+          "subject": "[SALES-E2E-COMPLEX-20260531060204] Re: 一抗产品咨询：IF 染色筛选",
+          "bodyText": "[SALES-E2E-COMPLEX-20260531060204]\nStep: SALES-REPLY-B\n\nMorgan 你好，\n\n感谢咨询。针对 IF 染色筛选，请补充目标 marker 和细胞类型，我们会整理 3 个 IF 一抗候选产品、验证图片、库存、交期和报价。\n\n谢谢，\nHui Li",
+          "bodyHtmlRef": null,
+          "snippet": "[SALES-E2E-COMPLEX-20260531060204] Step: SALES-REPLY-B Morgan 你好， 感谢咨询。针对 IF 染色筛选，请补充目标 marker 和细胞类型，我们会整理 3 个 IF 一抗候选产品、验证图片、库存、交期和报价。 谢谢， Hui Li",
+          "attachmentRefs": [],
+          "sentAt": "2026-05-31T06:04:07.452202Z",
+          "receivedAt": null,
+          "processedAt": "2026-05-31T06:04:07.452558Z",
+          "emailStatus": "PROCESSED",
+          "rawStorageRef": "{\"skill\": \"sales_activity_create_skill\"}",
+          "createdAt": "2026-05-31T06:04:07.455156Z"
+        },
+        {
+          "id": "3d8ea71b-622d-45e6-8fd4-71914a6773a5",
+          "providerEmailId": "AUTO-7e352909604eb36bc5805cf0f77dd697ff2285f9",
+          "mailbox": "gs_sales_01@163.com",
+          "threadId": "AUTO-19e160cba406d0bbf676e95dfe1d56e8de7de143",
+          "direction": "INBOUND_CUSTOMER",
+          "fromEmail": "gs_customer_01@163.com",
+          "fromName": "gs_customer_01",
+          "toEmails": [
+            "gs_sales_01@163.com"
+          ],
+          "ccEmails": [],
+          "subject": "[SALES-E2E-COMPLEX-20260531060204] Re: 一抗产品咨询：WB 和 IHC 验证",
+          "bodyText": "[SALES-E2E-COMPLEX-20260531060204]\nStep: CUSTOMER-A-FOLLOWUP\n\nHui 你好，\n\n补充：目标是人源肿瘤相关 marker，样本是细胞裂解液。请优先推荐 2 个科研用一抗候选产品，并附 datasheet、推荐稀释比例、验证依据、库存、交期和报价。\n\n谢谢，\nAlex",
+          "bodyHtmlRef": null,
+          "snippet": "[SALES-E2E-COMPLEX-20260531060204] Step: CUSTOMER-A-FOLLOWUP Hui 你好， 补充：目标是人源肿瘤相关 marker，样本是细胞裂解液。请优先推荐 2 个科研用一抗候选产品，并附 datasheet、推荐稀释比例、验证依据、库存、交期和报价。 谢谢， Alex",
+          "attachmentRefs": [],
+          "sentAt": null,
+          "receivedAt": "2026-05-31T06:04:50.273582Z",
+          "processedAt": "2026-05-31T06:04:50.279095Z",
+          "emailStatus": "PROCESSED",
+          "rawStorageRef": "{\"skill\": \"sales_lead_create_or_update_skill\"}",
+          "createdAt": "2026-05-31T06:04:50.285278Z"
+        },
+        {
+          "id": "de0b3ed1-09b2-4046-8c2f-ebca7e3744d0",
+          "providerEmailId": "AUTO-0d16c2a58d1f2a228a2c302b5e50914edfb68533",
+          "mailbox": "gs_sales_01@163.com",
+          "threadId": "AUTO-3af59ec375f450921a807ebfae9488e80522153f",
+          "direction": "INBOUND_CUSTOMER",
+          "fromEmail": "gs_customer_02@163.com",
+          "fromName": "gs_customer_02",
+          "toEmails": [
+            "gs_sales_01@163.com"
+          ],
+          "ccEmails": [],
+          "subject": "[SALES-E2E-COMPLEX-20260531060204] Re: 一抗产品咨询：IF 染色筛选",
+          "bodyText": "[SALES-E2E-COMPLEX-20260531060204]\nStep: CUSTOMER-B-FOLLOWUP\n\nHui 你好，\n\n补充：样本是固定后的人源培养细胞，应用只做 IF。请提供 3 个科研用一抗候选产品的 datasheet、IF 验证图片、推荐稀释比例、库存状态、交期和报价。\n\n谢谢，\nMorgan",
+          "bodyHtmlRef": null,
+          "snippet": "[SALES-E2E-COMPLEX-20260531060204] Step: CUSTOMER-B-FOLLOWUP Hui 你好， 补充：样本是固定后的人源培养细胞，应用只做 IF。请提供 3 个科研用一抗候选产品的 datasheet、IF 验证图片、推荐稀释比例、库存状态、交期和报价。 谢谢， Morgan",
+          "attachmentRefs": [],
+          "sentAt": null,
+          "receivedAt": "2026-05-31T06:04:50.387292Z",
+          "processedAt": "2026-05-31T06:04:50.398789Z",
+          "emailStatus": "PROCESSED",
+          "rawStorageRef": "{\"skill\": \"sales_lead_create_or_update_skill\"}",
+          "createdAt": "2026-05-31T06:04:50.400522Z"
+        }
+      ],
+      "pageable": {
+        "pageNumber": 0,
+        "pageSize": 300,
+        "sort": {
+          "sorted": false,
+          "unsorted": true,
+          "empty": true
+        },
+        "offset": 0,
+        "paged": true,
+        "unpaged": false
+      },
+      "last": true,
+      "totalPages": 1,
+      "totalElements": 6,
+      "numberOfElements": 6,
+      "first": true,
+      "size": 300,
+      "number": 0,
+      "sort": {
+        "sorted": false,
+        "unsorted": true,
+        "empty": true
+      },
+      "empty": false
+    },
+    "tasks": {
+      "content": [
+        {
+          "id": "cb040f7e-b4e4-4958-aa2c-d571bbae4942",
+          "taskNo": "TASK-5961B4C345A8",
+          "leadId": "cba778b1-b036-493e-a9d7-a620faf36dcd",
+          "sourceEmailId": null,
+          "assignedSalesEmail": "gs_sales_01@163.com",
+          "status": "PROPOSED",
+          "taskType": "CUSTOMER_FOLLOW_UP",
+          "priority": "NORMAL",
+          "title": "Follow up customer inquiry",
+          "summary": "Follow up customer inquiry",
+          "reason": "Follow up customer inquiry",
+          "suggestedAction": "Follow up customer inquiry",
+          "displaySummary": "Follow up customer inquiry",
+          "customerNeedSummary": "Follow up customer inquiry",
+          "sourceEventSummary": "[SALES-E2E-COMPLEX-20260531060204] 一抗产品咨询：WB 和 IHC 验证",
+          "actionItems": [],
+          "contextSnapshot": {
+            "source": "sales_follow_up_task_create_skill",
+            "subject": "[SALES-E2E-COMPLEX-20260531060204] 一抗产品咨询：WB 和 IHC 验证",
+            "bodySnippet": ""
+          },
+          "priorityReason": null,
+          "dueAt": "2026-06-01T06:03:21.569848Z",
+          "acceptedAt": null,
+          "completedAt": null,
+          "dismissedAt": null,
+          "closeReason": null,
+          "createdBy": "SALES_LEADS_AGENT_GENERIC_TASK_SKILL",
+          "createdAt": "2026-05-31T06:03:21.584990Z",
+          "updatedAt": "2026-05-31T06:03:21.584990Z"
+        },
+        {
+          "id": "93855468-4e96-4604-bb62-5d446149c91a",
+          "taskNo": "TASK-153582D3B728",
+          "leadId": "ef9c1c32-cd64-4d56-b3e2-fe25349bb603",
+          "sourceEmailId": null,
+          "assignedSalesEmail": "gs_sales_01@163.com",
+          "status": "PROPOSED",
+          "taskType": "CUSTOMER_FOLLOW_UP",
+          "priority": "NORMAL",
+          "title": "Follow up customer inquiry",
+          "summary": "Follow up customer inquiry",
+          "reason": "Follow up customer inquiry",
+          "suggestedAction": "Follow up customer inquiry",
+          "displaySummary": "Follow up customer inquiry",
+          "customerNeedSummary": "Follow up customer inquiry",
+          "sourceEventSummary": "[SALES-E2E-COMPLEX-20260531060204] 一抗产品咨询：IF 染色筛选",
+          "actionItems": [],
+          "contextSnapshot": {
+            "source": "sales_follow_up_task_create_skill",
+            "subject": "[SALES-E2E-COMPLEX-20260531060204] 一抗产品咨询：IF 染色筛选",
+            "bodySnippet": ""
+          },
+          "priorityReason": null,
+          "dueAt": "2026-06-01T06:03:21.704897Z",
+          "acceptedAt": null,
+          "completedAt": null,
+          "dismissedAt": null,
+          "closeReason": null,
+          "createdBy": "SALES_LEADS_AGENT_GENERIC_TASK_SKILL",
+          "createdAt": "2026-05-31T06:03:21.708360Z",
+          "updatedAt": "2026-05-31T06:03:21.708361Z"
+        },
+        {
+          "id": "8d0173c5-ed9a-4247-9159-f8e2f3ccbede",
+          "taskNo": "TASK-88F730D13E7C",
+          "leadId": "cba778b1-b036-493e-a9d7-a620faf36dcd",
+          "sourceEmailId": null,
+          "assignedSalesEmail": "gs_sales_01@163.com",
+          "status": "PROPOSED",
+          "taskType": "CUSTOMER_FOLLOW_UP",
+          "priority": "NORMAL",
+          "title": "Follow up customer inquiry",
+          "summary": "Follow up customer inquiry",
+          "reason": "Follow up customer inquiry",
+          "suggestedAction": "Follow up customer inquiry",
+          "displaySummary": "Follow up customer inquiry",
+          "customerNeedSummary": "Follow up customer inquiry",
+          "sourceEventSummary": "[SALES-E2E-COMPLEX-20260531060204] Re: 一抗产品咨询：WB 和 IHC 验证",
+          "actionItems": [],
+          "contextSnapshot": {
+            "source": "sales_follow_up_task_create_skill",
+            "subject": "[SALES-E2E-COMPLEX-20260531060204] Re: 一抗产品咨询：WB 和 IHC 验证",
+            "bodySnippet": ""
+          },
+          "priorityReason": null,
+          "dueAt": "2026-06-01T06:05:03.277105Z",
+          "acceptedAt": null,
+          "completedAt": null,
+          "dismissedAt": null,
+          "closeReason": null,
+          "createdBy": "SALES_LEADS_AGENT_GENERIC_TASK_SKILL",
+          "createdAt": "2026-05-31T06:05:03.307887Z",
+          "updatedAt": "2026-05-31T06:05:03.307887Z"
+        },
+        {
+          "id": "6c19faf6-e6ea-417d-a86e-977ba22afd26",
+          "taskNo": "TASK-AB55F6921584",
+          "leadId": "ef9c1c32-cd64-4d56-b3e2-fe25349bb603",
+          "sourceEmailId": null,
+          "assignedSalesEmail": "gs_sales_01@163.com",
+          "status": "PROPOSED",
+          "taskType": "CUSTOMER_FOLLOW_UP",
+          "priority": "NORMAL",
+          "title": "Follow up customer inquiry",
+          "summary": "Follow up customer inquiry",
+          "reason": "Follow up customer inquiry",
+          "suggestedAction": "Follow up customer inquiry",
+          "displaySummary": "Follow up customer inquiry",
+          "customerNeedSummary": "Follow up customer inquiry",
+          "sourceEventSummary": "[SALES-E2E-COMPLEX-20260531060204] Re: 一抗产品咨询：IF 染色筛选",
+          "actionItems": [],
+          "contextSnapshot": {
+            "source": "sales_follow_up_task_create_skill",
+            "subject": "[SALES-E2E-COMPLEX-20260531060204] Re: 一抗产品咨询：IF 染色筛选",
+            "bodySnippet": ""
+          },
+          "priorityReason": null,
+          "dueAt": "2026-06-01T06:05:03.491249Z",
+          "acceptedAt": null,
+          "completedAt": null,
+          "dismissedAt": null,
+          "closeReason": null,
+          "createdBy": "SALES_LEADS_AGENT_GENERIC_TASK_SKILL",
+          "createdAt": "2026-05-31T06:05:03.510448Z",
+          "updatedAt": "2026-05-31T06:05:03.510448Z"
+        }
+      ],
+      "pageable": {
+        "pageNumber": 0,
+        "pageSize": 300,
+        "sort": {
+          "sorted": false,
+          "unsorted": true,
+          "empty": true
+        },
+        "offset": 0,
+        "paged": true,
+        "unpaged": false
+      },
+      "last": true,
+      "totalPages": 1,
+      "totalElements": 4,
+      "numberOfElements": 4,
+      "first": true,
+      "size": 300,
+      "number": 0,
+      "sort": {
+        "sorted": false,
+        "unsorted": true,
+        "empty": true
+      },
+      "empty": false
+    },
+    "activitiesByLead": {
+      "cba778b1-b036-493e-a9d7-a620faf36dcd": [
+        {
+          "id": "dca78a29-f280-4343-bff3-4c20555ff178",
+          "activityNo": "ACT-1C55EB53A322",
+          "leadId": "cba778b1-b036-493e-a9d7-a620faf36dcd",
+          "sourceEmailId": "dcdd4485-2fd3-46ed-aea3-33cb88f4494f",
+          "relatedTaskId": null,
+          "salesEmail": "gs_sales_01@163.com",
+          "activityType": "EMAIL_SENT",
+          "occurredAt": "2026-05-31T06:04:07.312770Z",
+          "title": "[SALES-E2E-COMPLEX-20260531060204] Re: 一抗产品咨询：WB 和 IHC 验证",
+          "summary": "[SALES-E2E-COMPLEX-20260531060204] Step: SALES-REPLY-A Alex 你好， 感谢咨询。请补充目标蛋白名称、样本物种和样本类型，我们会整理 2 个 WB/IHC 一抗候选产品、datasheet、库存、交期和报价。 谢谢， Hui Li",
+          "keyPoints": [],
+          "customerSignals": [],
+          "nextStepSignals": [],
+          "progressSignal": "PROGRESS",
+          "progressReason": "Sales sent a documented follow-up email.",
+          "stageAfterActivity": "New Lead",
+          "extractedPayload": {
+            "snippet": "[SALES-E2E-COMPLEX-20260531060204] Step: SALES-REPLY-A Alex 你好， 感谢咨询。请补充目标蛋白名称、样本物种和样本类型，我们会整理 2 个 WB/IHC 一抗候选产品、datasheet、库存、交期和报价。 谢谢， Hui Li",
+            "subject": "[SALES-E2E-COMPLEX-20260531060204] Re: 一抗产品咨询：WB 和 IHC 验证",
+            "threadId": "AUTO-859104119060e00cba431aeecfc4fabc3eafe7f8"
+          },
+          "confidence": 0.9,
+          "createdBy": "SALES_LEADS_AGENT_GENERIC_ACTIVITY_SKILL",
+          "createdAt": "2026-05-31T06:04:07.349998Z",
+          "updatedAt": "2026-05-31T06:04:07.349998Z"
+        }
+      ],
+      "ef9c1c32-cd64-4d56-b3e2-fe25349bb603": [
+        {
+          "id": "8c984f3c-8d35-4573-a552-f994dbdd5c9a",
+          "activityNo": "ACT-B0124F6A9568",
+          "leadId": "ef9c1c32-cd64-4d56-b3e2-fe25349bb603",
+          "sourceEmailId": "a1eac65c-35a8-4f3a-b084-b446ecb2ae08",
+          "relatedTaskId": null,
+          "salesEmail": "gs_sales_01@163.com",
+          "activityType": "EMAIL_SENT",
+          "occurredAt": "2026-05-31T06:04:07.452202Z",
+          "title": "[SALES-E2E-COMPLEX-20260531060204] Re: 一抗产品咨询：IF 染色筛选",
+          "summary": "[SALES-E2E-COMPLEX-20260531060204] Step: SALES-REPLY-B Morgan 你好， 感谢咨询。针对 IF 染色筛选，请补充目标 marker 和细胞类型，我们会整理 3 个 IF 一抗候选产品、验证图片、库存、交期和报价。 谢谢， Hui Li",
+          "keyPoints": [],
+          "customerSignals": [],
+          "nextStepSignals": [],
+          "progressSignal": "PROGRESS",
+          "progressReason": "Sales sent a documented follow-up email.",
+          "stageAfterActivity": "New Lead",
+          "extractedPayload": {
+            "snippet": "[SALES-E2E-COMPLEX-20260531060204] Step: SALES-REPLY-B Morgan 你好， 感谢咨询。针对 IF 染色筛选，请补充目标 marker 和细胞类型，我们会整理 3 个 IF 一抗候选产品、验证图片、库存、交期和报价。 谢谢， Hui Li",
+            "subject": "[SALES-E2E-COMPLEX-20260531060204] Re: 一抗产品咨询：IF 染色筛选",
+            "threadId": "AUTO-a6dec1476a5b02856cb515b1c9d400e75a54605b"
+          },
+          "confidence": 0.9,
+          "createdBy": "SALES_LEADS_AGENT_GENERIC_ACTIVITY_SKILL",
+          "createdAt": "2026-05-31T06:04:07.476332Z",
+          "updatedAt": "2026-05-31T06:04:07.476332Z"
+        }
+      ]
+    },
+    "timelines": {
+      "cba778b1-b036-493e-a9d7-a620faf36dcd": {
+        "leadId": "cba778b1-b036-493e-a9d7-a620faf36dcd",
+        "activitySummary": null,
+        "items": [
+          {
+            "type": "FOLLOW_UP_TASK",
+            "id": "8d0173c5-ed9a-4247-9159-f8e2f3ccbede",
+            "occurredAt": "2026-05-31T06:05:03.307887Z",
+            "summary": "Follow up customer inquiry",
+            "display": {
+              "title": "Follow up customer inquiry",
+              "status": "PROPOSED",
+              "priority": "NORMAL",
+              "taskType": "CUSTOMER_FOLLOW_UP"
+            }
+          },
+          {
+            "type": "EMAIL",
+            "id": "3d8ea71b-622d-45e6-8fd4-71914a6773a5",
+            "occurredAt": "2026-05-31T06:04:50.273582Z",
+            "summary": "[SALES-E2E-COMPLEX-20260531060204] Step: CUSTOMER-A-FOLLOWUP Hui 你好， 补充：目标是人源肿瘤相关 marker，样本是细胞裂解液。请优先推荐 2 个科研用一抗候选产品，并附 datasheet、推荐稀释比例、验证依据、库存、交期和报价。 谢谢， Alex",
+            "display": {
+              "relationType": "CUSTOMER_REPLY",
+              "subject": "[SALES-E2E-COMPLEX-20260531060204] Re: 一抗产品咨询：WB 和 IHC 验证",
+              "direction": "INBOUND_CUSTOMER"
+            }
+          },
+          {
+            "type": "EMAIL",
+            "id": "dcdd4485-2fd3-46ed-aea3-33cb88f4494f",
+            "occurredAt": "2026-05-31T06:04:07.312770Z",
+            "summary": "[SALES-E2E-COMPLEX-20260531060204] Step: SALES-REPLY-A Alex 你好， 感谢咨询。请补充目标蛋白名称、样本物种和样本类型，我们会整理 2 个 WB/IHC 一抗候选产品、datasheet、库存、交期和报价。 谢谢， Hui Li",
+            "display": {
+              "relationType": "SALES_REPLY",
+              "subject": "[SALES-E2E-COMPLEX-20260531060204] Re: 一抗产品咨询：WB 和 IHC 验证",
+              "direction": "OUTBOUND_SALES"
+            }
+          },
+          {
+            "type": "SALES_ACTIVITY",
+            "id": "dca78a29-f280-4343-bff3-4c20555ff178",
+            "occurredAt": "2026-05-31T06:04:07.312770Z",
+            "summary": "[SALES-E2E-COMPLEX-20260531060204] Step: SALES-REPLY-A Alex 你好， 感谢咨询。请补充目标蛋白名称、样本物种和样本类型，我们会整理 2 个 WB/IHC 一抗候选产品、datasheet、库存、交期和报价。 谢谢， Hui Li",
+            "display": {
+              "title": "[SALES-E2E-COMPLEX-20260531060204] Re: 一抗产品咨询：WB 和 IHC 验证",
+              "activityType": "EMAIL_SENT",
+              "progressSignal": "PROGRESS"
+            }
+          },
+          {
+            "type": "FOLLOW_UP_TASK",
+            "id": "cb040f7e-b4e4-4958-aa2c-d571bbae4942",
+            "occurredAt": "2026-05-31T06:03:21.584990Z",
+            "summary": "Follow up customer inquiry",
+            "display": {
+              "title": "Follow up customer inquiry",
+              "status": "PROPOSED",
+              "priority": "NORMAL",
+              "taskType": "CUSTOMER_FOLLOW_UP"
+            }
+          },
+          {
+            "type": "EMAIL",
+            "id": "d196f31b-bd57-4268-8003-cda4abf8ffff",
+            "occurredAt": "2026-05-31T06:03:08.207725Z",
+            "summary": "[SALES-E2E-COMPLEX-20260531060204] Step: CUSTOMER-A-INQUIRY Hui 你好， 我们实验室正在评估科研用一抗产品，主要用于人源样本 Western blot，后续也希望做 IHC 验证。请推荐合适的一抗产品，并提供 datasheet、验证数据、现货情况、交期和报价。 谢谢， Alex Chen",
+            "display": {
+              "relationType": "FIRST_INQUIRY",
+              "subject": "[SALES-E2E-COMPLEX-20260531060204] 一抗产品咨询：WB 和 IHC 验证",
+              "direction": "INBOUND_CUSTOMER"
+            }
+          }
+        ]
+      },
+      "ef9c1c32-cd64-4d56-b3e2-fe25349bb603": {
+        "leadId": "ef9c1c32-cd64-4d56-b3e2-fe25349bb603",
+        "activitySummary": null,
+        "items": [
+          {
+            "type": "FOLLOW_UP_TASK",
+            "id": "6c19faf6-e6ea-417d-a86e-977ba22afd26",
+            "occurredAt": "2026-05-31T06:05:03.510448Z",
+            "summary": "Follow up customer inquiry",
+            "display": {
+              "title": "Follow up customer inquiry",
+              "status": "PROPOSED",
+              "priority": "NORMAL",
+              "taskType": "CUSTOMER_FOLLOW_UP"
+            }
+          },
+          {
+            "type": "EMAIL",
+            "id": "de0b3ed1-09b2-4046-8c2f-ebca7e3744d0",
+            "occurredAt": "2026-05-31T06:04:50.387292Z",
+            "summary": "[SALES-E2E-COMPLEX-20260531060204] Step: CUSTOMER-B-FOLLOWUP Hui 你好， 补充：样本是固定后的人源培养细胞，应用只做 IF。请提供 3 个科研用一抗候选产品的 datasheet、IF 验证图片、推荐稀释比例、库存状态、交期和报价。 谢谢， Morgan",
+            "display": {
+              "relationType": "CUSTOMER_REPLY",
+              "subject": "[SALES-E2E-COMPLEX-20260531060204] Re: 一抗产品咨询：IF 染色筛选",
+              "direction": "INBOUND_CUSTOMER"
+            }
+          },
+          {
+            "type": "EMAIL",
+            "id": "a1eac65c-35a8-4f3a-b084-b446ecb2ae08",
+            "occurredAt": "2026-05-31T06:04:07.452202Z",
+            "summary": "[SALES-E2E-COMPLEX-20260531060204] Step: SALES-REPLY-B Morgan 你好， 感谢咨询。针对 IF 染色筛选，请补充目标 marker 和细胞类型，我们会整理 3 个 IF 一抗候选产品、验证图片、库存、交期和报价。 谢谢， Hui Li",
+            "display": {
+              "relationType": "SALES_REPLY",
+              "subject": "[SALES-E2E-COMPLEX-20260531060204] Re: 一抗产品咨询：IF 染色筛选",
+              "direction": "OUTBOUND_SALES"
+            }
+          },
+          {
+            "type": "SALES_ACTIVITY",
+            "id": "8c984f3c-8d35-4573-a552-f994dbdd5c9a",
+            "occurredAt": "2026-05-31T06:04:07.452202Z",
+            "summary": "[SALES-E2E-COMPLEX-20260531060204] Step: SALES-REPLY-B Morgan 你好， 感谢咨询。针对 IF 染色筛选，请补充目标 marker 和细胞类型，我们会整理 3 个 IF 一抗候选产品、验证图片、库存、交期和报价。 谢谢， Hui Li",
+            "display": {
+              "title": "[SALES-E2E-COMPLEX-20260531060204] Re: 一抗产品咨询：IF 染色筛选",
+              "activityType": "EMAIL_SENT",
+              "progressSignal": "PROGRESS"
+            }
+          },
+          {
+            "type": "FOLLOW_UP_TASK",
+            "id": "93855468-4e96-4604-bb62-5d446149c91a",
+            "occurredAt": "2026-05-31T06:03:21.708360Z",
+            "summary": "Follow up customer inquiry",
+            "display": {
+              "title": "Follow up customer inquiry",
+              "status": "PROPOSED",
+              "priority": "NORMAL",
+              "taskType": "CUSTOMER_FOLLOW_UP"
+            }
+          },
+          {
+            "type": "EMAIL",
+            "id": "bb08045a-9d46-466d-a53f-9cb8bca2773b",
+            "occurredAt": "2026-05-31T06:03:08.363670Z",
+            "summary": "[SALES-E2E-COMPLEX-20260531060204] Step: CUSTOMER-B-INQUIRY Hui 你好， 我们正在为细胞免疫荧光实验筛选科研用一抗产品，样本是培养的人源细胞。请推荐适合 IF 应用的一抗产品，并提供 datasheet、验证图片、推荐稀释比例、现货情况、交期和报价。 谢谢， Morgan Lee",
+            "display": {
+              "relationType": "FIRST_INQUIRY",
+              "subject": "[SALES-E2E-COMPLEX-20260531060204] 一抗产品咨询：IF 染色筛选",
+              "direction": "INBOUND_CUSTOMER"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "mailbox": {
+    "sales": {
+      "account": "gs_sales_01@163.com",
+      "records": [
+        {
+          "folder": "INBOX",
+          "uid": "1780044771",
+          "messageId": "<178020734326.67985.5802677928728210702.SALES-E2E-COMPLEX-20260531060204.customer-a-inquiry@leads-e2e.local>",
+          "from": "Alex Chen <gs_customer_01@163.com>",
+          "to": "Hui Li <gs_sales_01@163.com>",
+          "cc": "",
+          "date": "2026-05-31T06:02:23Z",
+          "subject": "[SALES-E2E-COMPLEX-20260531060204] 一抗产品咨询：WB 和 IHC 验证",
+          "body": "[SALES-E2E-COMPLEX-20260531060204]\nStep: CUSTOMER-A-INQUIRY\n\nHui 你好，\n\n我们实验室正在评估科研用一抗产品，主要用于人源样本 Western blot，后续也希望做 IHC 验证。请推荐合适的一抗产品，并提供 datasheet、验证数据、现货情况、交期和报价。\n\n谢谢，\nAlex Chen",
+          "bodyLength": 179
+        },
+        {
+          "folder": "INBOX",
+          "uid": "1780044772",
+          "messageId": "<178020734805.67985.12329721343477162594.SALES-E2E-COMPLEX-20260531060204.customer-b-inquiry@leads-e2e.local>",
+          "from": "Morgan Lee <gs_customer_02@163.com>",
+          "to": "Hui Li <gs_sales_01@163.com>",
+          "cc": "",
+          "date": "2026-05-31T06:02:28Z",
+          "subject": "[SALES-E2E-COMPLEX-20260531060204] 一抗产品咨询：IF 染色筛选",
+          "body": "[SALES-E2E-COMPLEX-20260531060204]\nStep: CUSTOMER-B-INQUIRY\n\nHui 你好，\n\n我们正在为细胞免疫荧光实验筛选科研用一抗产品，样本是培养的人源细胞。请推荐适合 IF 应用的一抗产品，并提供 datasheet、验证图片、推荐稀释比例、现货情况、交期和报价。\n\n谢谢，\nMorgan Lee",
+          "bodyLength": 174
+        },
+        {
+          "folder": "已发送",
+          "uid": "1780107711",
+          "messageId": "<178020740857.67985.1426169870740266615.SALES-E2E-COMPLEX-20260531060204.sales-reply-a@leads-e2e.local>",
+          "from": "Hui Li <gs_sales_01@163.com>",
+          "to": "Alex Chen <gs_customer_01@163.com>",
+          "cc": "",
+          "date": "2026-05-31T06:03:28Z",
+          "subject": "[SALES-E2E-COMPLEX-20260531060204] Re: 一抗产品咨询：WB 和 IHC 验证",
+          "body": "[SALES-E2E-COMPLEX-20260531060204]\nStep: SALES-REPLY-A\n\nAlex 你好，\n\n感谢咨询。请补充目标蛋白名称、样本物种和样本类型，我们会整理 2 个 WB/IHC 一抗候选产品、datasheet、库存、交期和报价。\n\n谢谢，\nHui Li",
+          "bodyLength": 146
+        },
+        {
+          "folder": "已发送",
+          "uid": "1780107712",
+          "messageId": "<178020741350.67985.8768390984671638874.SALES-E2E-COMPLEX-20260531060204.sales-reply-b@leads-e2e.local>",
+          "from": "Hui Li <gs_sales_01@163.com>",
+          "to": "Morgan Lee <gs_customer_02@163.com>",
+          "cc": "",
+          "date": "2026-05-31T06:03:33Z",
+          "subject": "[SALES-E2E-COMPLEX-20260531060204] Re: 一抗产品咨询：IF 染色筛选",
+          "body": "[SALES-E2E-COMPLEX-20260531060204]\nStep: SALES-REPLY-B\n\nMorgan 你好，\n\n感谢咨询。针对 IF 染色筛选，请补充目标 marker 和细胞类型，我们会整理 3 个 IF 一抗候选产品、验证图片、库存、交期和报价。\n\n谢谢，\nHui Li",
+          "bodyLength": 149
+        },
+        {
+          "folder": "INBOX",
+          "uid": "1780044773",
+          "messageId": "<178020745407.67985.424166695196856758.SALES-E2E-COMPLEX-20260531060204.customer-a-followup@leads-e2e.local>",
+          "from": "Alex Chen <gs_customer_01@163.com>",
+          "to": "Hui Li <gs_sales_01@163.com>",
+          "cc": "",
+          "date": "2026-05-31T06:04:14Z",
+          "subject": "[SALES-E2E-COMPLEX-20260531060204] Re: 一抗产品咨询：WB 和 IHC 验证",
+          "body": "[SALES-E2E-COMPLEX-20260531060204]\nStep: CUSTOMER-A-FOLLOWUP\n\nHui 你好，\n\n补充：目标是人源肿瘤相关 marker，样本是细胞裂解液。请优先推荐 2 个科研用一抗候选产品，并附 datasheet、推荐稀释比例、验证依据、库存、交期和报价。\n\n谢谢，\nAlex",
+          "bodyLength": 163
+        },
+        {
+          "folder": "INBOX",
+          "uid": "1780044774",
+          "messageId": "<178020745941.67985.10601322670607138162.SALES-E2E-COMPLEX-20260531060204.customer-b-followup@leads-e2e.local>",
+          "from": "Morgan Lee <gs_customer_02@163.com>",
+          "to": "Hui Li <gs_sales_01@163.com>",
+          "cc": "",
+          "date": "2026-05-31T06:04:19Z",
+          "subject": "[SALES-E2E-COMPLEX-20260531060204] Re: 一抗产品咨询：IF 染色筛选",
+          "body": "[SALES-E2E-COMPLEX-20260531060204]\nStep: CUSTOMER-B-FOLLOWUP\n\nHui 你好，\n\n补充：样本是固定后的人源培养细胞，应用只做 IF。请提供 3 个科研用一抗候选产品的 datasheet、IF 验证图片、推荐稀释比例、库存状态、交期和报价。\n\n谢谢，\nMorgan",
+          "bodyLength": 162
+        }
+      ]
+    },
+    "customerA": {
+      "account": "gs_customer_01@163.com",
+      "records": [
+        {
+          "folder": "已发送",
+          "uid": "1780045525",
+          "messageId": "<178020734326.67985.5802677928728210702.SALES-E2E-COMPLEX-20260531060204.customer-a-inquiry@leads-e2e.local>",
+          "from": "Alex Chen <gs_customer_01@163.com>",
+          "to": "Hui Li <gs_sales_01@163.com>",
+          "cc": "",
+          "date": "2026-05-31T06:02:23Z",
+          "subject": "[SALES-E2E-COMPLEX-20260531060204] 一抗产品咨询：WB 和 IHC 验证",
+          "body": "[SALES-E2E-COMPLEX-20260531060204]\nStep: CUSTOMER-A-INQUIRY\n\nHui 你好，\n\n我们实验室正在评估科研用一抗产品，主要用于人源样本 Western blot，后续也希望做 IHC 验证。请推荐合适的一抗产品，并提供 datasheet、验证数据、现货情况、交期和报价。\n\n谢谢，\nAlex Chen",
+          "bodyLength": 179
+        },
+        {
+          "folder": "INBOX",
+          "uid": "1780044841",
+          "messageId": "<178020740857.67985.1426169870740266615.SALES-E2E-COMPLEX-20260531060204.sales-reply-a@leads-e2e.local>",
+          "from": "Hui Li <gs_sales_01@163.com>",
+          "to": "Alex Chen <gs_customer_01@163.com>",
+          "cc": "",
+          "date": "2026-05-31T06:03:28Z",
+          "subject": "[SALES-E2E-COMPLEX-20260531060204] Re: 一抗产品咨询：WB 和 IHC 验证",
+          "body": "[SALES-E2E-COMPLEX-20260531060204]\nStep: SALES-REPLY-A\n\nAlex 你好，\n\n感谢咨询。请补充目标蛋白名称、样本物种和样本类型，我们会整理 2 个 WB/IHC 一抗候选产品、datasheet、库存、交期和报价。\n\n谢谢，\nHui Li",
+          "bodyLength": 146
+        },
+        {
+          "folder": "已发送",
+          "uid": "1780045526",
+          "messageId": "<178020745407.67985.424166695196856758.SALES-E2E-COMPLEX-20260531060204.customer-a-followup@leads-e2e.local>",
+          "from": "Alex Chen <gs_customer_01@163.com>",
+          "to": "Hui Li <gs_sales_01@163.com>",
+          "cc": "",
+          "date": "2026-05-31T06:04:14Z",
+          "subject": "[SALES-E2E-COMPLEX-20260531060204] Re: 一抗产品咨询：WB 和 IHC 验证",
+          "body": "[SALES-E2E-COMPLEX-20260531060204]\nStep: CUSTOMER-A-FOLLOWUP\n\nHui 你好，\n\n补充：目标是人源肿瘤相关 marker，样本是细胞裂解液。请优先推荐 2 个科研用一抗候选产品，并附 datasheet、推荐稀释比例、验证依据、库存、交期和报价。\n\n谢谢，\nAlex",
+          "bodyLength": 163
+        }
+      ]
+    },
+    "customerB": {
+      "account": "gs_customer_02@163.com",
+      "records": [
+        {
+          "folder": "已发送",
+          "uid": "1780156822",
+          "messageId": "<178020734805.67985.12329721343477162594.SALES-E2E-COMPLEX-20260531060204.customer-b-inquiry@leads-e2e.local>",
+          "from": "Morgan Lee <gs_customer_02@163.com>",
+          "to": "Hui Li <gs_sales_01@163.com>",
+          "cc": "",
+          "date": "2026-05-31T06:02:28Z",
+          "subject": "[SALES-E2E-COMPLEX-20260531060204] 一抗产品咨询：IF 染色筛选",
+          "body": "[SALES-E2E-COMPLEX-20260531060204]\nStep: CUSTOMER-B-INQUIRY\n\nHui 你好，\n\n我们正在为细胞免疫荧光实验筛选科研用一抗产品，样本是培养的人源细胞。请推荐适合 IF 应用的一抗产品，并提供 datasheet、验证图片、推荐稀释比例、现货情况、交期和报价。\n\n谢谢，\nMorgan Lee",
+          "bodyLength": 174
+        },
+        {
+          "folder": "INBOX",
+          "uid": "1780155306",
+          "messageId": "<178020741350.67985.8768390984671638874.SALES-E2E-COMPLEX-20260531060204.sales-reply-b@leads-e2e.local>",
+          "from": "Hui Li <gs_sales_01@163.com>",
+          "to": "Morgan Lee <gs_customer_02@163.com>",
+          "cc": "",
+          "date": "2026-05-31T06:03:33Z",
+          "subject": "[SALES-E2E-COMPLEX-20260531060204] Re: 一抗产品咨询：IF 染色筛选",
+          "body": "[SALES-E2E-COMPLEX-20260531060204]\nStep: SALES-REPLY-B\n\nMorgan 你好，\n\n感谢咨询。针对 IF 染色筛选，请补充目标 marker 和细胞类型，我们会整理 3 个 IF 一抗候选产品、验证图片、库存、交期和报价。\n\n谢谢，\nHui Li",
+          "bodyLength": 149
+        },
+        {
+          "folder": "已发送",
+          "uid": "1780156823",
+          "messageId": "<178020745941.67985.10601322670607138162.SALES-E2E-COMPLEX-20260531060204.customer-b-followup@leads-e2e.local>",
+          "from": "Morgan Lee <gs_customer_02@163.com>",
+          "to": "Hui Li <gs_sales_01@163.com>",
+          "cc": "",
+          "date": "2026-05-31T06:04:19Z",
+          "subject": "[SALES-E2E-COMPLEX-20260531060204] Re: 一抗产品咨询：IF 染色筛选",
+          "body": "[SALES-E2E-COMPLEX-20260531060204]\nStep: CUSTOMER-B-FOLLOWUP\n\nHui 你好，\n\n补充：样本是固定后的人源培养细胞，应用只做 IF。请提供 3 个科研用一抗候选产品的 datasheet、IF 验证图片、推荐稀释比例、库存状态、交期和报价。\n\n谢谢，\nMorgan",
+          "bodyLength": 162
+        }
+      ]
+    }
+  },
+  "summary": {
+    "counts": {
+      "leads": 2,
+      "emails": 6,
+      "tasks": 4,
+      "activities": 2
+    },
+    "leadKeys": [
+      [
+        "gs_customer_01@163.com",
+        "CPBU_ANTIBODIES_RUO_ANTIBODIES_PRIMARY_ANTIBODIES"
+      ],
+      [
+        "gs_customer_02@163.com",
+        "CPBU_ANTIBODIES_RUO_ANTIBODIES_PRIMARY_ANTIBODIES"
+      ]
+    ]
+  },
+  "timeline": [
+    {
+      "time": "2026-05-31T06:02:23.206023Z",
+      "actor": "orchestrator",
+      "action": "cleanup",
+      "result": {
+        "backend": "cleanup+product initialize",
+        "mailboxes": {
+          "gs_sales_01@163.com": {
+            "deletedCount": 3,
+            "deletedSample": [
+              {
+                "folder": "INBOX",
+                "uid": "1780044769",
+                "messageId": "<178020722189.67985.910683473170934424.SALES-E2E-SIMPLE-20260531060002.customer-a-inquiry@leads-e2e.local>"
+              },
+              {
+                "folder": "INBOX",
+                "uid": "1780044770",
+                "messageId": "<178020728670.67985.11873386422533946234.SALES-E2E-SIMPLE-20260531060002.customer-a-followup@leads-e2e.local>"
+              },
+              {
+                "folder": "已发送",
+                "uid": "1780107710",
+                "messageId": "<178020726214.67985.6703318543589357489.SALES-E2E-SIMPLE-20260531060002.sales-reply-a@leads-e2e.local>"
+              }
+            ]
+          },
+          "gs_customer_01@163.com": {
+            "deletedCount": 3,
+            "deletedSample": [
+              {
+                "folder": "INBOX",
+                "uid": "1780044840",
+                "messageId": "<178020726214.67985.6703318543589357489.SALES-E2E-SIMPLE-20260531060002.sales-reply-a@leads-e2e.local>"
+              },
+              {
+                "folder": "已发送",
+                "uid": "1780045523",
+                "messageId": "<178020722189.67985.910683473170934424.SALES-E2E-SIMPLE-20260531060002.customer-a-inquiry@leads-e2e.local>"
+              },
+              {
+                "folder": "已发送",
+                "uid": "1780045524",
+                "messageId": "<178020728670.67985.11873386422533946234.SALES-E2E-SIMPLE-20260531060002.customer-a-followup@leads-e2e.local>"
+              }
+            ]
+          },
+          "gs_customer_02@163.com": {
+            "deletedCount": 0,
+            "deletedSample": []
+          }
+        }
+      }
+    },
+    {
+      "time": "2026-05-31T06:02:28.051219Z",
+      "actor": "gs_customer_01@163.com",
+      "action": "CUSTOMER-A-INQUIRY",
+      "result": "delivered"
+    },
+    {
+      "time": "2026-05-31T06:02:32.942739Z",
+      "actor": "gs_customer_02@163.com",
+      "action": "CUSTOMER-B-INQUIRY",
+      "result": "delivered"
+    },
+    {
+      "time": "2026-05-31T06:03:28.575823Z",
+      "actor": "Sales Leads Agent",
+      "action": "请检查销售邮箱上下文，处理新的客户咨询邮件，并在需要时创建 lead 与 follow-up task。",
+      "result": {
+        "leads": 2,
+        "emails": 2,
+        "tasks": 2,
+        "activities": 0
+      }
+    },
+    {
+      "time": "2026-05-31T06:03:33.505908Z",
+      "actor": "gs_sales_01@163.com",
+      "action": "SALES-REPLY-A",
+      "result": "delivered"
+    },
+    {
+      "time": "2026-05-31T06:03:39.110170Z",
+      "actor": "gs_sales_01@163.com",
+      "action": "SALES-REPLY-B",
+      "result": "delivered"
+    },
+    {
+      "time": "2026-05-31T06:04:14.077789Z",
+      "actor": "Sales Leads Agent",
+      "action": "请检查销售最近已发送邮件，把销售对客户的业务跟进同步成 activity。不要发送邮件。",
+      "result": {
+        "leads": 2,
+        "emails": 4,
+        "tasks": 2,
+        "activities": 2
+      }
+    },
+    {
+      "time": "2026-05-31T06:04:19.410655Z",
+      "actor": "gs_customer_01@163.com",
+      "action": "CUSTOMER-A-FOLLOWUP",
+      "result": "delivered"
+    },
+    {
+      "time": "2026-05-31T06:04:24.372588Z",
+      "actor": "gs_customer_02@163.com",
+      "action": "CUSTOMER-B-FOLLOWUP",
+      "result": "delivered"
+    },
+    {
+      "time": "2026-05-31T06:05:16.678061Z",
+      "actor": "Sales Leads Agent",
+      "action": "请检查销售邮箱上下文，处理客户新的追问，并在需要时创建 follow-up task。",
+      "result": {
+        "leads": 2,
+        "emails": 6,
+        "tasks": 4,
+        "activities": 2
+      }
+    }
+  ]
+}

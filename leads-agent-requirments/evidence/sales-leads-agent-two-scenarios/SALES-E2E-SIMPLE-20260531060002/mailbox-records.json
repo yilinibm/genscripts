@@ -1,0 +1,88 @@
+{
+  "sales": {
+    "account": "gs_sales_01@163.com",
+    "records": [
+      {
+        "folder": "INBOX",
+        "uid": "1780044769",
+        "messageId": "<178020722189.67985.910683473170934424.SALES-E2E-SIMPLE-20260531060002.customer-a-inquiry@leads-e2e.local>",
+        "from": "Alex Chen <gs_customer_01@163.com>",
+        "to": "Hui Li <gs_sales_01@163.com>",
+        "cc": "",
+        "date": "2026-05-31T06:00:21Z",
+        "subject": "[SALES-E2E-SIMPLE-20260531060002] 一抗产品咨询：WB 和 IHC 验证",
+        "body": "[SALES-E2E-SIMPLE-20260531060002]\nStep: CUSTOMER-A-INQUIRY\n\nHui 你好，\n\n我们实验室正在评估科研用一抗产品，主要用于人源样本 Western blot，后续也希望做 IHC 验证。请推荐合适的一抗产品，并提供 datasheet、验证数据、现货情况、交期和报价。\n\n谢谢，\nAlex Chen",
+        "bodyLength": 178
+      },
+      {
+        "folder": "已发送",
+        "uid": "1780107710",
+        "messageId": "<178020726214.67985.6703318543589357489.SALES-E2E-SIMPLE-20260531060002.sales-reply-a@leads-e2e.local>",
+        "from": "Hui Li <gs_sales_01@163.com>",
+        "to": "Alex Chen <gs_customer_01@163.com>",
+        "cc": "",
+        "date": "2026-05-31T06:01:02Z",
+        "subject": "[SALES-E2E-SIMPLE-20260531060002] Re: 一抗产品咨询：WB 和 IHC 验证",
+        "body": "[SALES-E2E-SIMPLE-20260531060002]\nStep: SALES-REPLY-A\n\nAlex 你好，\n\n感谢咨询 GenScript 科研用一抗产品。我们会优先筛选适合 WB、同时具备 IHC 验证信息的一抗候选产品。请补充目标蛋白名称、样本物种和样本类型，我会整理 datasheet、库存、交期和报价。\n\n谢谢，\nHui Li",
+        "bodyLength": 178
+      },
+      {
+        "folder": "INBOX",
+        "uid": "1780044770",
+        "messageId": "<178020728670.67985.11873386422533946234.SALES-E2E-SIMPLE-20260531060002.customer-a-followup@leads-e2e.local>",
+        "from": "Alex Chen <gs_customer_01@163.com>",
+        "to": "Hui Li <gs_sales_01@163.com>",
+        "cc": "",
+        "date": "2026-05-31T06:01:26Z",
+        "subject": "[SALES-E2E-SIMPLE-20260531060002] Re: 一抗产品咨询：WB 和 IHC 验证",
+        "body": "[SALES-E2E-SIMPLE-20260531060002]\nStep: CUSTOMER-A-FOLLOWUP\n\nHui 你好，\n\n补充一下：目标是人源肿瘤相关 marker，样本是细胞裂解液。请优先推荐 2 个科研用一抗候选产品，并附 datasheet、推荐稀释比例、验证依据、库存、交期和报价。\n\n谢谢，\nAlex",
+        "bodyLength": 164
+      }
+    ]
+  },
+  "customerA": {
+    "account": "gs_customer_01@163.com",
+    "records": [
+      {
+        "folder": "已发送",
+        "uid": "1780045523",
+        "messageId": "<178020722189.67985.910683473170934424.SALES-E2E-SIMPLE-20260531060002.customer-a-inquiry@leads-e2e.local>",
+        "from": "Alex Chen <gs_customer_01@163.com>",
+        "to": "Hui Li <gs_sales_01@163.com>",
+        "cc": "",
+        "date": "2026-05-31T06:00:21Z",
+        "subject": "[SALES-E2E-SIMPLE-20260531060002] 一抗产品咨询：WB 和 IHC 验证",
+        "body": "[SALES-E2E-SIMPLE-20260531060002]\nStep: CUSTOMER-A-INQUIRY\n\nHui 你好，\n\n我们实验室正在评估科研用一抗产品，主要用于人源样本 Western blot，后续也希望做 IHC 验证。请推荐合适的一抗产品，并提供 datasheet、验证数据、现货情况、交期和报价。\n\n谢谢，\nAlex Chen",
+        "bodyLength": 178
+      },
+      {
+        "folder": "INBOX",
+        "uid": "1780044840",
+        "messageId": "<178020726214.67985.6703318543589357489.SALES-E2E-SIMPLE-20260531060002.sales-reply-a@leads-e2e.local>",
+        "from": "Hui Li <gs_sales_01@163.com>",
+        "to": "Alex Chen <gs_customer_01@163.com>",
+        "cc": "",
+        "date": "2026-05-31T06:01:02Z",
+        "subject": "[SALES-E2E-SIMPLE-20260531060002] Re: 一抗产品咨询：WB 和 IHC 验证",
+        "body": "[SALES-E2E-SIMPLE-20260531060002]\nStep: SALES-REPLY-A\n\nAlex 你好，\n\n感谢咨询 GenScript 科研用一抗产品。我们会优先筛选适合 WB、同时具备 IHC 验证信息的一抗候选产品。请补充目标蛋白名称、样本物种和样本类型，我会整理 datasheet、库存、交期和报价。\n\n谢谢，\nHui Li",
+        "bodyLength": 178
+      },
+      {
+        "folder": "已发送",
+        "uid": "1780045524",
+        "messageId": "<178020728670.67985.11873386422533946234.SALES-E2E-SIMPLE-20260531060002.customer-a-followup@leads-e2e.local>",
+        "from": "Alex Chen <gs_customer_01@163.com>",
+        "to": "Hui Li <gs_sales_01@163.com>",
+        "cc": "",
+        "date": "2026-05-31T06:01:26Z",
+        "subject": "[SALES-E2E-SIMPLE-20260531060002] Re: 一抗产品咨询：WB 和 IHC 验证",
+        "body": "[SALES-E2E-SIMPLE-20260531060002]\nStep: CUSTOMER-A-FOLLOWUP\n\nHui 你好，\n\n补充一下：目标是人源肿瘤相关 marker，样本是细胞裂解液。请优先推荐 2 个科研用一抗候选产品，并附 datasheet、推荐稀释比例、验证依据、库存、交期和报价。\n\n谢谢，\nAlex",
+        "bodyLength": 164
+      }
+    ]
+  },
+  "customerB": {
+    "account": "gs_customer_02@163.com",
+    "records": []
+  }
+}

@@ -1,0 +1,19 @@
+.DS_Store
+
+# Runtime state
+*.pid
+.logs/
+logs/
+*.log
+
+# Java build outputs
+target/
+
+# Frontend build/dependencies
+node_modules/
+dist/
+dist-ssr/
+
+# Local editor files
+.idea/
+.vscode/

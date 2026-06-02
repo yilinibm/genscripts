@@ -1,0 +1,386 @@
+{
+  "leads": {
+    "content": [
+      {
+        "id": "2d7a7f4d-30c7-4880-9350-5d327ef867b2",
+        "leadNo": "LEAD-94EF3CD22417",
+        "customerEmail": "gs_customer_01@163.com",
+        "customerEmailNormalized": "gs_customer_01@163.com",
+        "customerName": "gs_customer_01",
+        "company": null,
+        "title": null,
+        "phone": null,
+        "productBundle": {
+          "id": "1961ab37-218e-4e85-a913-222265c64b72",
+          "code": "CPBU_ANTIBODIES_RUO_ANTIBODIES_PRIMARY_ANTIBODIES",
+          "pathEn": "CPBU > Antibodies > RUO Antibodies > Primary Antibodies",
+          "pathCn": "目录产品业务单元 > 抗体 > 科研用抗体 > 一抗",
+          "businessUnit": "CPBU",
+          "categoryLevel1": "Antibodies",
+          "categoryLevel2": "RUO Antibodies",
+          "categoryLevel3": "Primary Antibodies",
+          "synonyms": [
+            "Primary Antibodies",
+            "一抗"
+          ],
+          "active": true,
+          "createdAt": "2026-05-31T06:00:02.979967Z",
+          "updatedAt": "2026-05-31T06:00:02.979967Z"
+        },
+        "leadUniqueKey": "gs_customer_01@163.com + CPBU > Antibodies > RUO Antibodies > Primary Antibodies",
+        "ownerSalesEmail": "gs_sales_01@163.com",
+        "status": "ACTIVE",
+        "intentLevel": "MEDIUM",
+        "currentStage": "New Lead",
+        "timelineTrend": "STABLE",
+        "latestTimelineSummaryId": null,
+        "source": "Customer inbound inquiry email",
+        "inquirySummary": "Hui 你好，我们实验室正在评估科研用一抗产品，主要用于人源样本 Western blot，后续也希望做 IHC 验证。请推荐合适的一抗产品，并提供 datasheet、验证数据、现货情况、交期和报价。谢谢，Alex Chen",
+        "extractedRequirements": {
+          "rawFromEmail": "gs_customer_01@163.com",
+          "lastInboundAt": "2026-05-31T06:00:49.205845Z",
+          "productReason": null,
+          "productBundleCode": "CPBU_ANTIBODIES_RUO_ANTIBODIES_PRIMARY_ANTIBODIES",
+          "productBundlePath": "CPBU > Antibodies > RUO Antibodies > Primary Antibodies",
+          "productConfidence": null,
+          "lastInboundSubject": "一抗产品咨询：WB 和 IHC 验证",
+          "productBundlePathCn": "目录产品业务单元 > 抗体 > 科研用抗体 > 一抗",
+          "businessCustomerEmail": "gs_customer_01@163.com"
+        },
+        "firstEmailId": "094ad306-f5f3-42a0-a125-b2d03e14a9c1",
+        "latestEmailAt": "2026-05-31T06:01:21.080703Z",
+        "lastCustomerEmailAt": "2026-05-31T06:00:49.205845Z",
+        "lastSalesActivityAt": "2026-05-31T06:01:21.080703Z",
+        "createdBy": "SALES_LEADS_AGENT_GENERIC_ACTIVITY_SKILL",
+        "createdAt": "2026-05-31T06:00:49.232878Z",
+        "updatedAt": "2026-05-31T06:01:21.120391Z"
+      }
+    ],
+    "pageable": {
+      "pageNumber": 0,
+      "pageSize": 300,
+      "sort": {
+        "sorted": false,
+        "unsorted": true,
+        "empty": true
+      },
+      "offset": 0,
+      "paged": true,
+      "unpaged": false
+    },
+    "last": true,
+    "totalPages": 1,
+    "totalElements": 1,
+    "numberOfElements": 1,
+    "first": true,
+    "size": 300,
+    "number": 0,
+    "sort": {
+      "sorted": false,
+      "unsorted": true,
+      "empty": true
+    },
+    "empty": false
+  },
+  "emails": {
+    "content": [
+      {
+        "id": "094ad306-f5f3-42a0-a125-b2d03e14a9c1",
+        "providerEmailId": "AUTO-3d6919b3877eb12a29179a815ff07e87afa19bcb",
+        "mailbox": "gs_sales_01@163.com",
+        "threadId": "AUTO-4b2e0bd09cbc81e66c6257ec60d03bb0a74e2443",
+        "direction": "INBOUND_CUSTOMER",
+        "fromEmail": "gs_customer_01@163.com",
+        "fromName": "gs_customer_01",
+        "toEmails": [
+          "gs_sales_01@163.com"
+        ],
+        "ccEmails": [],
+        "subject": "一抗产品咨询：WB 和 IHC 验证",
+        "bodyText": "Hui 你好，我们实验室正在评估科研用一抗产品，主要用于人源样本 Western blot，后续也希望做 IHC 验证。请推荐合适的一抗产品，并提供 datasheet、验证数据、现货情况、交期和报价。谢谢，Alex Chen",
+        "bodyHtmlRef": null,
+        "snippet": "Hui 你好，我们实验室正在评估科研用一抗产品，主要用于人源样本 Western blot，后续也希望做 IHC 验证。请推荐合适的一抗产品，并提供 datasheet、验证数据、现货情况、交期和报价。谢谢，Alex Chen",
+        "attachmentRefs": [],
+        "sentAt": null,
+        "receivedAt": "2026-05-31T06:00:49.205845Z",
+        "processedAt": "2026-05-31T06:00:49.218921Z",
+        "emailStatus": "PROCESSED",
+        "rawStorageRef": "{\"skill\": \"sales_lead_create_or_update_skill\"}",
+        "createdAt": "2026-05-31T06:00:49.224107Z"
+      },
+      {
+        "id": "dbd52894-e975-4ec4-89b4-e38689e3b38d",
+        "providerEmailId": "AUTO-8a91aeafd0033612c868d90b5a07947d774f6e8d",
+        "mailbox": "gs_sales_01@163.com",
+        "threadId": "AUTO-15f980cedb4941e9796b7ffc71939002aaeec58f",
+        "direction": "OUTBOUND_SALES",
+        "fromEmail": "gs_sales_01@163.com",
+        "fromName": "Sales",
+        "toEmails": [
+          "gs_customer_01@163.com"
+        ],
+        "ccEmails": [],
+        "subject": "Re: 一抗产品咨询：WB 和 IHC 验证",
+        "bodyText": "Alex 你好，感谢咨询 GenScript 科研用一抗产品。我们会优先筛选适合 WB、同时具备 IHC 验证信息的一抗候选产品。请补充目标蛋白名称、样本物种和样本类型，我会整理 datasheet、库存、交期和报价。谢谢，Hui Li",
+        "bodyHtmlRef": null,
+        "snippet": "Alex 你好，感谢咨询 GenScript 科研用一抗产品。我们会优先筛选适合 WB、同时具备 IHC 验证信息的一抗候选产品。请补充目标蛋白名称、样本物种和样本类型，我会整理 datasheet、库存、交期和报价。谢谢，Hui Li",
+        "attachmentRefs": [],
+        "sentAt": "2026-05-31T06:01:21.080703Z",
+        "receivedAt": null,
+        "processedAt": "2026-05-31T06:01:21.081057Z",
+        "emailStatus": "PROCESSED",
+        "rawStorageRef": "{\"skill\": \"sales_activity_create_skill\"}",
+        "createdAt": "2026-05-31T06:01:21.085532Z"
+      },
+      {
+        "id": "23fcf258-c3a8-4480-be73-76b92777cd6f",
+        "providerEmailId": "AUTO-474cb3ff872ee91adf7e22116cf8d0ed73c9daaf",
+        "mailbox": "gs_sales_01@163.com",
+        "threadId": "AUTO-fcaec5236abaf1b01c875d926d025e97be92674e",
+        "direction": "INBOUND_CUSTOMER",
+        "fromEmail": "gs_customer_01@163.com",
+        "fromName": "gs_customer_01",
+        "toEmails": [
+          "gs_sales_01@163.com"
+        ],
+        "ccEmails": [],
+        "subject": "Re: 一抗产品咨询：WB 和 IHC 验证",
+        "bodyText": "Hui 你好，补充一下：目标是人源肿瘤相关 marker，样本是细胞裂解液。请优先推荐 2 个科研用一抗候选产品，并附 datasheet、推荐稀释比例、验证依据、库存、交期和报价。谢谢，Alex",
+        "bodyHtmlRef": null,
+        "snippet": "Hui 你好，补充一下：目标是人源肿瘤相关 marker，样本是细胞裂解液。请优先推荐 2 个科研用一抗候选产品，并附 datasheet、推荐稀释比例、验证依据、库存、交期和报价。谢谢，Alex",
+        "attachmentRefs": [],
+        "sentAt": null,
+        "receivedAt": "2026-05-31T06:01:47.712110Z",
+        "processedAt": "2026-05-31T06:01:47.727269Z",
+        "emailStatus": "PROCESSED",
+        "rawStorageRef": "{\"skill\": \"sales_lead_create_or_update_skill\"}",
+        "createdAt": "2026-05-31T06:01:47.738182Z"
+      }
+    ],
+    "pageable": {
+      "pageNumber": 0,
+      "pageSize": 300,
+      "sort": {
+        "sorted": false,
+        "unsorted": true,
+        "empty": true
+      },
+      "offset": 0,
+      "paged": true,
+      "unpaged": false
+    },
+    "last": true,
+    "totalPages": 1,
+    "totalElements": 3,
+    "numberOfElements": 3,
+    "first": true,
+    "size": 300,
+    "number": 0,
+    "sort": {
+      "sorted": false,
+      "unsorted": true,
+      "empty": true
+    },
+    "empty": false
+  },
+  "tasks": {
+    "content": [
+      {
+        "id": "9039ea9e-2304-4c41-a5be-230e7aa83984",
+        "taskNo": "TASK-ACFF3BBB63DB",
+        "leadId": "2d7a7f4d-30c7-4880-9350-5d327ef867b2",
+        "sourceEmailId": "094ad306-f5f3-42a0-a125-b2d03e14a9c1",
+        "assignedSalesEmail": "gs_sales_01@163.com",
+        "status": "PROPOSED",
+        "taskType": "CUSTOMER_FOLLOW_UP",
+        "priority": "NORMAL",
+        "title": "Follow up customer inquiry",
+        "summary": "Follow up customer inquiry",
+        "reason": "Follow up customer inquiry",
+        "suggestedAction": "Follow up customer inquiry",
+        "displaySummary": "Follow up customer inquiry",
+        "customerNeedSummary": "Follow up customer inquiry",
+        "sourceEventSummary": "一抗产品咨询：WB 和 IHC 验证",
+        "actionItems": [],
+        "contextSnapshot": {
+          "source": "sales_follow_up_task_create_skill",
+          "subject": "一抗产品咨询：WB 和 IHC 验证",
+          "bodySnippet": ""
+        },
+        "priorityReason": null,
+        "dueAt": "2026-06-01T06:00:56.241867Z",
+        "acceptedAt": null,
+        "completedAt": null,
+        "dismissedAt": null,
+        "closeReason": null,
+        "createdBy": "SALES_LEADS_AGENT_GENERIC_TASK_SKILL",
+        "createdAt": "2026-05-31T06:00:56.251818Z",
+        "updatedAt": "2026-05-31T06:00:56.251819Z"
+      },
+      {
+        "id": "0bdcd3b9-78ce-4459-ad4d-6092b3446aae",
+        "taskNo": "TASK-9DFA68FF9A57",
+        "leadId": "2d7a7f4d-30c7-4880-9350-5d327ef867b2",
+        "sourceEmailId": "23fcf258-c3a8-4480-be73-76b92777cd6f",
+        "assignedSalesEmail": "gs_sales_01@163.com",
+        "status": "PROPOSED",
+        "taskType": "CUSTOMER_FOLLOW_UP",
+        "priority": "NORMAL",
+        "title": "Follow up customer inquiry",
+        "summary": "Follow up customer inquiry",
+        "reason": "Follow up customer inquiry",
+        "suggestedAction": "Follow up customer inquiry",
+        "displaySummary": "Follow up customer inquiry",
+        "customerNeedSummary": "Follow up customer inquiry",
+        "sourceEventSummary": "Re: 一抗产品咨询：WB 和 IHC 验证",
+        "actionItems": [],
+        "contextSnapshot": {
+          "source": "sales_follow_up_task_create_skill",
+          "subject": "Re: 一抗产品咨询：WB 和 IHC 验证",
+          "bodySnippet": ""
+        },
+        "priorityReason": null,
+        "dueAt": "2026-06-01T06:01:55.360330Z",
+        "acceptedAt": null,
+        "completedAt": null,
+        "dismissedAt": null,
+        "closeReason": null,
+        "createdBy": "SALES_LEADS_AGENT_GENERIC_TASK_SKILL",
+        "createdAt": "2026-05-31T06:01:55.375433Z",
+        "updatedAt": "2026-05-31T06:01:55.375433Z"
+      }
+    ],
+    "pageable": {
+      "pageNumber": 0,
+      "pageSize": 300,
+      "sort": {
+        "sorted": false,
+        "unsorted": true,
+        "empty": true
+      },
+      "offset": 0,
+      "paged": true,
+      "unpaged": false
+    },
+    "last": true,
+    "totalPages": 1,
+    "totalElements": 2,
+    "numberOfElements": 2,
+    "first": true,
+    "size": 300,
+    "number": 0,
+    "sort": {
+      "sorted": false,
+      "unsorted": true,
+      "empty": true
+    },
+    "empty": false
+  },
+  "activitiesByLead": {
+    "2d7a7f4d-30c7-4880-9350-5d327ef867b2": [
+      {
+        "id": "af4a9718-c6fe-4179-9ba9-88620811c2ff",
+        "activityNo": "ACT-352D3FFB88BE",
+        "leadId": "2d7a7f4d-30c7-4880-9350-5d327ef867b2",
+        "sourceEmailId": "dbd52894-e975-4ec4-89b4-e38689e3b38d",
+        "relatedTaskId": null,
+        "salesEmail": "gs_sales_01@163.com",
+        "activityType": "EMAIL_SENT",
+        "occurredAt": "2026-05-31T06:01:21.080703Z",
+        "title": "Re: 一抗产品咨询：WB 和 IHC 验证",
+        "summary": "Alex 你好，感谢咨询 GenScript 科研用一抗产品。我们会优先筛选适合 WB、同时具备 IHC 验证信息的一抗候选产品。请补充目标蛋白名称、样本物种和样本类型，我会整理 datasheet、库存、交期和报价。谢谢，Hui Li",
+        "keyPoints": [],
+        "customerSignals": [],
+        "nextStepSignals": [],
+        "progressSignal": "PROGRESS",
+        "progressReason": "Sales sent a documented follow-up email.",
+        "stageAfterActivity": "New Lead",
+        "extractedPayload": {
+          "snippet": "Alex 你好，感谢咨询 GenScript 科研用一抗产品。我们会优先筛选适合 WB、同时具备 IHC 验证信息的一抗候选产品。请补充目标蛋白名称、样本物种和样本类型，我会整理 datasheet、库存、交期和报价。谢谢，Hui Li",
+          "subject": "Re: 一抗产品咨询：WB 和 IHC 验证",
+          "threadId": "AUTO-15f980cedb4941e9796b7ffc71939002aaeec58f"
+        },
+        "confidence": 0.9,
+        "createdBy": "SALES_LEADS_AGENT_GENERIC_ACTIVITY_SKILL",
+        "createdAt": "2026-05-31T06:01:21.113066Z",
+        "updatedAt": "2026-05-31T06:01:21.113067Z"
+      }
+    ]
+  },
+  "timelines": {
+    "2d7a7f4d-30c7-4880-9350-5d327ef867b2": {
+      "leadId": "2d7a7f4d-30c7-4880-9350-5d327ef867b2",
+      "activitySummary": null,
+      "items": [
+        {
+          "type": "FOLLOW_UP_TASK",
+          "id": "0bdcd3b9-78ce-4459-ad4d-6092b3446aae",
+          "occurredAt": "2026-05-31T06:01:55.375433Z",
+          "summary": "Follow up customer inquiry",
+          "display": {
+            "title": "Follow up customer inquiry",
+            "status": "PROPOSED",
+            "priority": "NORMAL",
+            "taskType": "CUSTOMER_FOLLOW_UP"
+          }
+        },
+        {
+          "type": "EMAIL",
+          "id": "23fcf258-c3a8-4480-be73-76b92777cd6f",
+          "occurredAt": "2026-05-31T06:01:47.712110Z",
+          "summary": "Hui 你好，补充一下：目标是人源肿瘤相关 marker，样本是细胞裂解液。请优先推荐 2 个科研用一抗候选产品，并附 datasheet、推荐稀释比例、验证依据、库存、交期和报价。谢谢，Alex",
+          "display": {
+            "relationType": "CUSTOMER_REPLY",
+            "subject": "Re: 一抗产品咨询：WB 和 IHC 验证",
+            "direction": "INBOUND_CUSTOMER"
+          }
+        },
+        {
+          "type": "EMAIL",
+          "id": "dbd52894-e975-4ec4-89b4-e38689e3b38d",
+          "occurredAt": "2026-05-31T06:01:21.080703Z",
+          "summary": "Alex 你好，感谢咨询 GenScript 科研用一抗产品。我们会优先筛选适合 WB、同时具备 IHC 验证信息的一抗候选产品。请补充目标蛋白名称、样本物种和样本类型，我会整理 datasheet、库存、交期和报价。谢谢，Hui Li",
+          "display": {
+            "relationType": "SALES_REPLY",
+            "subject": "Re: 一抗产品咨询：WB 和 IHC 验证",
+            "direction": "OUTBOUND_SALES"
+          }
+        },
+        {
+          "type": "SALES_ACTIVITY",
+          "id": "af4a9718-c6fe-4179-9ba9-88620811c2ff",
+          "occurredAt": "2026-05-31T06:01:21.080703Z",
+          "summary": "Alex 你好，感谢咨询 GenScript 科研用一抗产品。我们会优先筛选适合 WB、同时具备 IHC 验证信息的一抗候选产品。请补充目标蛋白名称、样本物种和样本类型，我会整理 datasheet、库存、交期和报价。谢谢，Hui Li",
+          "display": {
+            "title": "Re: 一抗产品咨询：WB 和 IHC 验证",
+            "activityType": "EMAIL_SENT",
+            "progressSignal": "PROGRESS"
+          }
+        },
+        {
+          "type": "FOLLOW_UP_TASK",
+          "id": "9039ea9e-2304-4c41-a5be-230e7aa83984",
+          "occurredAt": "2026-05-31T06:00:56.251818Z",
+          "summary": "Follow up customer inquiry",
+          "display": {
+            "title": "Follow up customer inquiry",
+            "status": "PROPOSED",
+            "priority": "NORMAL",
+            "taskType": "CUSTOMER_FOLLOW_UP"
+          }
+        },
+        {
+          "type": "EMAIL",
+          "id": "094ad306-f5f3-42a0-a125-b2d03e14a9c1",
+          "occurredAt": "2026-05-31T06:00:49.205845Z",
+          "summary": "Hui 你好，我们实验室正在评估科研用一抗产品，主要用于人源样本 Western blot，后续也希望做 IHC 验证。请推荐合适的一抗产品，并提供 datasheet、验证数据、现货情况、交期和报价。谢谢，Alex Chen",
+          "display": {
+            "relationType": "FIRST_INQUIRY",
+            "subject": "一抗产品咨询：WB 和 IHC 验证",
+            "direction": "INBOUND_CUSTOMER"
+          }
+        }
+      ]
+    }
+  }
+}

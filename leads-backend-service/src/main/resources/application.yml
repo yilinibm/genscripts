@@ -1,0 +1,24 @@
+server:
+  port: ${SERVER_PORT:8091}
+
+spring:
+  application:
+    name: leads-backend-service
+  datasource:
+    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://127.0.0.1:5434/leads_agent}
+    username: ${SPRING_DATASOURCE_USERNAME:postgres}
+    password: ${SPRING_DATASOURCE_PASSWORD:rootpassword}
+    driver-class-name: org.postgresql.Driver
+  flyway:
+    enabled: true
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    open-in-view: false
+
+leads:
+  product-categories-path: ${LEADS_PRODUCT_CATEGORIES_PATH:../leads-agent-requirments/genscript-product-categories.md}
